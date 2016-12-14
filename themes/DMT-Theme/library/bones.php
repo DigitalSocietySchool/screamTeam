@@ -126,29 +126,17 @@ function bones_scripts_and_styles() {
 
   global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
 
-  		$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
- 		wp_register_script( 'wp-api', plugins_url( 'wp-api' . $suffix . '.js', __FILE__ ), array( 'jquery', 'backbone', 'underscore' ), '1.2', true );
- 		$settings = array(
-			'root'          => esc_url_raw( get_rest_url() ),
-			'nonce'         => wp_create_nonce( 'wp_rest' ),
-			'versionString' => 'wp/v2/'
-		);
-  		wp_localize_script( 'wp-api', 'wpApiSettings', $settings );
-  		wp_enqueue_script( 'wp-api' );
-
   if (!is_admin()) {
-
-		
-  		//nonce library
- 
-
-
 
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
-		// register main stylesheet
+		    // register scream stylesheet for documentation
+        wp_register_style('screamdoc-stylesheet', get_stylesheet_directory_uri() . '/library/css/custom-screamdoc.css', array(), '', 'all' );
+        
+      // register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+    
 
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -175,9 +163,13 @@ function bones_scripts_and_styles() {
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
-		wp_enqueue_style( 'bones-stylesheet' );
+
+      wp_enqueue_style('screamdoc-stylesheet');
+            wp_enqueue_style( 'bones-stylesheet' );
+
 		wp_enqueue_style( 'bones-ie-only' );
 		wp_enqueue_style( 'slider-stylesheet' );
+        
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
@@ -196,8 +188,6 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'jQuery-ui-Slider-Pips' );
 
 		wp_enqueue_script( 'bones-js' );
-
-
 		
 
 	}

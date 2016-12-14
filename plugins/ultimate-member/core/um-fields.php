@@ -2620,9 +2620,15 @@ class UM_Fields {
 			}
 
 			if ( um_is_myprofile() ) {
-				$output .= '<p class="um-profile-note">' . $emo .'<span>' . sprintf(__('Your profile is looking a little bateekha. Why not <a href="%s">add</a> some information!','ultimatemember'), um_edit_profile_url() ) . '</span></p>';
+                
+                //inside the 'About' tab
+                // Soo.. replace the edit profile url with the link to actually edit it
+                
+				$output .= '<p class="um-profile-note">' . $emo .'<span>' . sprintf(__('Your profile is looking a little empty. Why not <a href="%s">add</a> some information!','ultimatemember'), um_edit_profile_url() ) . '</span></p>';
+                
+                
 			} else {
-				$output .= '<p class="um-profile-note">'. $emo . '<span>' . __('This user is lazy.','ultimatemember') . '</span></p>';
+				$output .= '<p class="um-profile-note">'. $emo . '<span>' . __('This user has not added any information to their profile yet.','ultimatemember') . '</span></p>';
 			}
 		}
 

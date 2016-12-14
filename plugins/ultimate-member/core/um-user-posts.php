@@ -8,9 +8,14 @@ class UM_User_posts {
 		
 		add_action('um_profile_content_posts', array(&$this, 'add_posts') );
 		add_action('um_profile_content_comments', array(&$this, 'add_comments') );
-		
+        add_action('um_profile_content_projects', array(&$this, 'add_projects') );
+        
+        
 		add_action('um_ajax_load_posts__um_load_posts', array(&$this, 'load_posts') );
 		add_action('um_ajax_load_posts__um_load_comments', array(&$this, 'load_comments') );
+        
+        //Not yet created
+        add_action('um_ajax_load_posts__um_load_projects', array(&$this, 'load_projects') );
 		
 	}
 	
@@ -67,13 +72,14 @@ class UM_User_posts {
 			'name' => __('Posts','ultimatemember'),
 			'icon' => 'um-faicon-pencil',
 		);
-		$tabs['Projects'] = array(
-			'name' => __('Projects','ultimatemember'),
-			'icon' => 'um-faicon-pencil',
-		);
 		
 		$tabs['comments'] = array(
 			'name' => __('Comments','ultimatemember'),
+			'icon' => 'um-faicon-comment',
+		);
+        
+        $tabs['Projects'] = array(
+			'name' => __('Projects','ultimatemember'),
 			'icon' => 'um-faicon-comment',
 		);
 		
@@ -88,10 +94,12 @@ class UM_User_posts {
 		$ultimatemember->shortcodes->load_template('profile/posts');
 
 	}
-
-	function add_projects() {
+    /***
+	***	@add projects
+	***/
+    function add_projects() {
 		global $ultimatemember;
-	//	$ultimatemember->shortcodes->load_template('profile/posts');
+		//$ultimatemember->shortcodes->load_template('profile/posts');
 
 	}
 	

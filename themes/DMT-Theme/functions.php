@@ -11,7 +11,6 @@ sidebars, comments, ect.
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
 
-
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );
 
@@ -19,6 +18,7 @@ require_once( 'library/bones.php' );
 LAUNCH BONES
 Let's get everything up and running.
 *********************/
+
 
 function bones_ahoy() {
 
@@ -60,7 +60,6 @@ function bones_ahoy() {
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
 } /* end bones ahoy */
-
 
 // let's get this party started
 add_action( 'after_setup_theme', 'bones_ahoy' );
@@ -160,6 +159,16 @@ function bones_register_sidebars() {
 		'id' => 'sidebar1',
 		'name' => __( 'Sidebar 1', 'bonestheme' ),
 		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+    
+    register_sidebar(array(
+		'id' => 'create_project_sidebar',
+		'name' => __( 'Create project sidebar', 'bonestheme' ),
+		'description' => __( 'Upload project photo and add team members', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -267,13 +276,6 @@ function pagination_result_count( $wp_query = null ) {
     );
 }
 
-
-//-------------------------------------------------------
-
-
-
-
-//-------------------------------------------------------
 function location_session () {
  global $wp_session;
  $wp_session = WP_Session::get_instance();
@@ -313,115 +315,7 @@ function csv_importer_taxonomies() {
    
 }
 
-/*----------------------------------Project Goal--------------------------------------------------*/
 
-/**
- * Add the field "Project goal" to REST API responses for posts read and write
- /**
- * Handler for getting custom field data.
- *
- * @since 0.1.0
- *
- * @param array $object The object from the response
- * @param string $field_name Name of field
- * @param WP_REST_Request $request Current request
- *
- * @return mixed
- */
-add_action( 'rest_api_init', 'slug_register_projectGoal' );
-function slug_register_projectGoal() {
-    register_rest_field( 'project',
-        'wpcf-project-goal',
-        array(
-            'get_callback'    => 'slug_get_projectGoal',
-            'update_callback' => 'slug_update_projectGoal',
-            'schema'          => null,
-        )
-    );
-}
-
-
-function slug_get_projectGoal( $object, $field_name, $request ) {
-    return get_post_meta( $object[ 'id' ], $field_name );
-}
-
-
-function slug_update_projectGoal( $value, $object, $field_name ) {
-    if ( ! $value || ! is_string( $value ) ) {
-        return;
-    }
-
-    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
-
-}
-
-/*----------------------------------------Start Date--------------------------------------------------*/
-add_action( 'rest_api_init', 'slug_register_startDate' );
-function slug_register_startDate() {
-    register_rest_field( 'project',
-        'wpcf-start-date',
-        array(
-            'get_callback'    => 'slug_get_startDate',
-            'update_callback' => 'slug_update_startDate',
-            'schema'          => null,
-        )
-    );
-}
-
-
-function slug_get_startDate( $object, $field_name, $request ) {
-    return get_post_meta( $object[ 'id' ], $field_name );
-}
-
-
-function slug_update_startDate( $value, $object, $field_name ) {
-    if ( ! $value || ! is_string( $value ) ) {
-        return;
-    }
-
-    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
-
-}
-
-
-/*----------------------------------------End Date--------------------------------------------------*/
-add_action( 'rest_api_init', 'slug_register_endDate' );
-function slug_register_endDate() {
-    register_rest_field( 'project',
-        'wpcf-end-date',
-        array(
-            'get_callback'    => 'slug_get_endDate',
-            'update_callback' => 'slug_update_endDate',
-            'schema'          => null,
-        )
-    );
-}
-
-
-function slug_get_endDate( $object, $field_name, $request ) {
-    return get_post_meta( $object[ 'id' ], $field_name );
-}
-
-
-function slug_update_endDate( $value, $object, $field_name ) {
-    if ( ! $value || ! is_string( $value ) ) {
-        return;
-    }
-
-    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
-
-}
-
-
-
-
-/*----------------------------------------------------------------------------------------------------*/
-function wpsd_add_project_args() {
-    global $wp_post_types;
- 
-    $wp_post_types['project']->show_in_rest = true;
-    $wp_post_types['project']->rest_base = 'project';
-}
-add_action( 'init', 'wpsd_add_project_args', 30 );
-
+add_action( 'wp_enqueue_scripts', 'wpse_enqueue_page_template_styles' );
 /* DON'T DELETE THIS CLOSING TAG */ ?>
+1

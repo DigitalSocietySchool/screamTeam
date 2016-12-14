@@ -400,9 +400,6 @@ function wpcf_custom_types_register( $post_type, $data ) {
 		unset( $data['taxonomies'] );
 	}
 
-    // $data->show_in_rest = true;
-    // $data->rest_base = $post_type;
-
     $args = register_post_type( $post_type, apply_filters( 'wpcf_type', $data, $post_type ) );
 
     do_action( 'wpcf_type_registered', $args );

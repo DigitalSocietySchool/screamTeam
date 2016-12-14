@@ -1,0 +1,122 @@
+/* ==========================================================================
+   INPUT FIELDS
+   ========================================================================== */
+
+input[type="text"].scream_oneline {
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent; 
+    outline:none;
+}
+input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus{
+    background-color: transparent !important;
+}
+
+.scream_textarea{
+    outline:none;
+    background-color: transparent;
+    width: 500px;
+    
+}
+
+.scream_textarea:focus{
+    background-color: transparent;
+    outline:none;
+}
+/* ==========================================================================
+   TEXT & BORDERS
+   ========================================================================== */
+
+.readOnly{
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
+}
+.containerBox{
+    background-color:white;
+    border:1px solid black;
+    width: 250px;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.scream_btn{
+    background-color: transparent;
+    color: black;
+    border:2px solid black;
+    text-align:center;
+    width:250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* ==========================================================================
+   PAGE + SIDEBAR DIVISION 
+   ========================================================================== */
+#sidebar_box{
+    float: left;
+    height:100%;
+    width:30%;
+}
+
+ /*Main content of the page*/
+#main_pcontent{
+    display: block;
+    float:right;
+    height:100%;
+    width:70%;
+
+}
+/*
+
+#scream_oneline {
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline:none;
+}
+
+#scream_oneline:focus {
+    background-color: transparent;
+
+}
+#project_goal
+{
+    outline:none;
+    background-color: transparent;
+    width: 500px;
+    
+}
+
+#project_goal:focus
+{
+    background-color: transparent;
+    outline:none;
+}
+
+#readOnly
+{
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
+}
+#container_proj
+{
+    background-color:white;
+    border:1px solid black;
+    width: 250px;
+}
+
+#project_btn{
+    background-color: transparent;
+    color: black;
+    border:2px solid black;
+    text-align:center;
+    width:250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+*/
+
+
+
