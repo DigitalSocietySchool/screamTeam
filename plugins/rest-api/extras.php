@@ -8,12 +8,9 @@
  * @subpackage JSON API
  */
 
-
 add_action( 'wp_enqueue_scripts', 'rest_register_scripts', -100 );
 add_action( 'admin_enqueue_scripts', 'rest_register_scripts', -100 );
-		//wp_localize_script( 'wp-api', 'wpApiSettings', $settings );
 
-//console.log("we're here")
 if ( ! function_exists( 'rest_register_scripts' ) ) {
 	/**
 	 * Registers REST API JavaScript helpers.
@@ -34,10 +31,7 @@ if ( ! function_exists( 'rest_register_scripts' ) ) {
 			'nonce'         => wp_create_nonce( 'wp_rest' ),
 			'versionString' => 'wp/v2/',
 		);
-		
-		//wp_localize_script( 'wp-api', 'wpApiSettings', $settings );
-		// wp_enqueue_script( 'wp-api' );
-
+		wp_localize_script( 'wp-api', 'wpApiSettings', $settings );
 	}
 }
 

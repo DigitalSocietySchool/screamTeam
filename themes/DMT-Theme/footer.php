@@ -19,7 +19,7 @@
 					</div>
 
 					<div class="footer_colophon">
-						<p><span class="serif">Design method toolkit</span> is a project by <a href="http://www.medialabamsterdam.com" rel="nofollow">MediaLAB Amsterdam </a></p>
+						<p><span class="serif">Design Methods - </span><span class="serifitalic">toolkit</span> is a project by <a href="http://www.medialabamsterdam.com" rel="nofollow">MediaLAB Amsterdam </a></p>
 					</div>
 				
 
@@ -31,9 +31,7 @@
 
       <div class="mobile-footer">
       <ul class="mobile-footer-nav">
-        <a href="<?php echo get_site_url(); ?>/using-the-toolkit"><li id="aboutFooterItem"><span>about</span></li></a>
-        <!--a href="<?php if (is_single() || is_page('using-the-toolkit') || is_search()) { echo get_site_url(); ?><?php } else { ?>#<?php } ?>"><li id="filterFooterItem"><span>filter</span></li></a-->
-        <li id="searchFooterItem"><span>search</span></li>
+        <a href="<?php echo get_site_url(); ?>/using-the-toolkit"><li id="aboutFooterItem"><span>about</span></li></a><a href="<?php if (is_single() || is_page('using-the-toolkit') || is_search()) { echo get_site_url(); ?><?php } else { ?>#<?php } ?>"><li id="filterFooterItem"><span>filter</span></li></a><li id="searchFooterItem"><span>search</span></li>
       </ul>
     </div>
 

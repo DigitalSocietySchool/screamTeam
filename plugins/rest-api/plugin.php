@@ -12,9 +12,6 @@
 /**
  * WP_REST_Controller class.
  */
-
-
-console.log("plugin is here");
 if ( ! class_exists( 'WP_REST_Controller' ) ) {
 	require_once dirname( __FILE__ ) . '/lib/endpoints/class-wp-rest-controller.php';
 }

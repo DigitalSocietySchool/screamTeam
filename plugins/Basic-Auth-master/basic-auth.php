@@ -11,24 +11,12 @@
 function json_basic_auth_handler( $user ) {
 	global $wp_json_basic_auth_error;
 
-	if(isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) { list($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW']) = explode(':', base64_decode(substr($_SERVER['REDIRECT_HTTP_AUTHORIZATION'], 6))); }
-
 	$wp_json_basic_auth_error = null;
 
 	// Don't authenticate twice
 	if ( ! empty( $user ) ) {
 		return $user;
 	}
-	if ( !isset( $_SERVER['PHP_AUTH_USER'] ) && ( isset( $_SERVER['HTTP_AUTHORIZATION'] ) || isset( $_SERVER['REDIRECT_HTTP_AUTHORIZATION'] ) ) ) {
-	if ( isset( $_SERVER['HTTP_AUTHORIZATION'] ) ) {
-		$header = $_SERVER['HTTP_AUTHORIZATION'];
-	} else {
-	 $header = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
-	}
-	if ( !empty( $header ) ) {
-	 list( $_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'] ) = explode( ':', base64_decode(substr( $header, 6 ) ) );
-	}
-}
 
 	// Check that we're trying to authenticate
 	if ( !isset( $_SERVER['PHP_AUTH_USER'] ) ) {
