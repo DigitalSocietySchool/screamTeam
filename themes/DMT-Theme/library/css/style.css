@@ -105,6 +105,7 @@ body {
  */
 /* line 89, ../scss/partials/_normalize.scss */
 a {
+  text-decoration: none;
   background: transparent;
 }
 

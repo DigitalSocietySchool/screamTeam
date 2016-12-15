@@ -318,4 +318,3 @@ function csv_importer_taxonomies() {
 
 add_action( 'wp_enqueue_scripts', 'wpse_enqueue_page_template_styles' );
 /* DON'T DELETE THIS CLOSING TAG */ ?>
-1

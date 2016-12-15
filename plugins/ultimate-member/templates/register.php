@@ -1,9 +1,13 @@
 <div class="um <?php echo $this->get_class( $mode ); ?> um-<?php echo $form_id; ?>">
 
 	<div class="um-form">
-	
-		<form method="post" action="">
-	
+        
+	<div id = "sidebar_box">
+        <?php get_sidebar('create_project_sidebar');?>
+    </div>
+        
+		<form method="page" action="">
+	<div id = "register_content">
 		<?php
 
 			do_action("um_before_form", $args);
@@ -19,6 +23,7 @@
 			do_action("um_after_form", $args);
 			
 		?>
+        </div>
 		
 		</form>
 	

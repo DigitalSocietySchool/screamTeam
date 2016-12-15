@@ -15,7 +15,6 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
 .scream_textarea{
     outline:none;
     background-color: transparent;
-    width: 500px;
     
 }
 
@@ -35,7 +34,7 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
 .containerBox{
     background-color:white;
     border:1px solid black;
-    width: 250px;
+    width: 44%;
 }
 
 /* ==========================================================================
@@ -46,9 +45,13 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
     color: black;
     border:2px solid black;
     text-align:center;
-    width:250px;
+    width:30%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.scream_btn:focus{
+    outline:none;
 }
 /* ==========================================================================
    PAGE + SIDEBAR DIVISION 
@@ -66,6 +69,13 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
     height:100%;
     width:70%;
 
+}
+/* ==========================================================================
+   SVG ICONS
+   ========================================================================== */
+#member_icon{
+    height: 3%;
+    width: 3%;
 }
 /*
 
