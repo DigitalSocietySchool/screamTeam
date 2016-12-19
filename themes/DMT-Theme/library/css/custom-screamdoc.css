@@ -53,6 +53,10 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
 .scream_btn:focus{
     outline:none;
 }
+
+.upload{
+    border:none;
+}
 /* ==========================================================================
    PAGE + SIDEBAR DIVISION 
    ========================================================================== */
@@ -68,6 +72,13 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
     float:right;
     height:100%;
     width:70%;
+
+}
+
+.centeredContent{
+   margin: auto;
+    width: 50%;
+    text-align: center;
 
 }
 /* ==========================================================================
