@@ -26,7 +26,7 @@ function enqueue_() {
         </div>
       <div id = "main_pcontent">
         <h3>STARTING A PROJECT</h3>
-        <em>What are you doing to work on?</em>
+        <em>What are you going to work on?</em>
         <br>
         <br>
         <input class="scream_oneline" name="projectName" type="text" placeholder="Your project name" id = "scream_oneline"/>
