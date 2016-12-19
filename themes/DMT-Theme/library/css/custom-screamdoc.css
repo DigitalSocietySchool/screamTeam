@@ -22,6 +22,20 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
     background-color: transparent;
     outline:none;
 }
+p.scream_wide_box{
+    float:left;
+    border: 5px solid black;
+    padding: 15px;
+    outline:none;
+
+}
+p.scream_wide_box: active{
+    background-color: silver;
+}
+p.scream_wide_box:hover{
+    background-color: silver;
+    outline:none;
+}
 /* ==========================================================================
    TEXT & BORDERS
    ========================================================================== */
@@ -53,6 +67,10 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
 .scream_btn:focus{
     outline:none;
 }
+
+.upload{
+    border:none;
+}
 /* ==========================================================================
    PAGE + SIDEBAR DIVISION 
    ========================================================================== */
@@ -69,6 +87,12 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
     height:100%;
     width:70%;
 
+}
+
+.centeredContent{
+    margin:auto;
+    width: 50%;
+    text-align: center;
 }
 /* ==========================================================================
    SVG ICONS
