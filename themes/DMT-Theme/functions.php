@@ -11,6 +11,9 @@ sidebars, comments, ect.
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
 
+
+
+
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );
 
@@ -281,6 +284,23 @@ function location_session () {
  $wp_session = WP_Session::get_instance();
 }
 add_action( 'init', 'location_session' );
+
+
+
+//register the project post type to be used by REST API since its managed by a plug-in
+//source: http://scottbolinger.com/custom-post-types-wp-api-v2/
+
+function wpsd_add_project_args() {
+    global $wp_post_types;
+ 
+    $wp_post_types['project']->show_in_rest = true;
+    $wp_post_types['project']->rest_base = 'project';
+    $wp_post_types['project']->rest_controller_class = 'WP_REST_Posts_Controller';
+}
+add_action( 'init', 'wpsd_add_project_args', 30 );
+
+
+
 
 function my_formatter($content) {    
 	$new_content = '';    

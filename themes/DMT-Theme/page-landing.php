@@ -1,4 +1,8 @@
 <?php
+
+
+  global $wp_session;
+    $wp_session['searching'] = false;
 /*
  Template Name: Landing Page
  *
@@ -11,55 +15,59 @@
  *
  * For more info: http://codex.wordpress.org/Page_Templates
 */
+ add_action("wp_enqueue_scripts", "enqueue_");
+function enqueue_() {
+    wp_enqueue_script( 'wp-api', plugins_url( 'build/js/wp-api.js', __FILE__ ), array( 'jquery', 'underscore', 'backbone' ), '1.0', true );
+    $settings = array( 'root' => esc_url_raw( get_rest_url() ), 'nonce' => wp_create_nonce( 'wp_rest' ) );
+    wp_localize_script( 'wp-api', 'WP_API_Settings', $settings );
+    wp_register_script('wp-api');
+
+}
+
 ?>
 
 <?php get_header(); ?>
 
-			<div id="container">
+			<div id= "main-content">
+    <div id = "sidebar_box">
 
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php get_sidebar('create_project_sidebar');?>
+    </div>
+    <div id = "main_pcontent">
 
-					<?php
-						// the content (pretty self explanatory huh)
-						the_content();
 
-						/*
-						 * Link Pages is used in case you have posts that are set to break into
-						 * multiple pages. You can remove this if you don't plan on doing that.
-						 *
-						 * Also, breaking content up into multiple pages is a horrible experience,
-						 * so don't do it. While there are SOME edge cases where this is useful, it's
-						 * mostly used for people to get more ad views. It's up to you but if you want
-						 * to do it, you're wrong and I hate you. (Ok, I still love you but just not as much)
-						 *
-						 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
-						 *
-						*/
-						wp_link_pages( array(
-							'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-							'after'       => '</div>',
-							'link_before' => '<span>',
-							'link_after'  => '</span>',
-						) );
-					?>
+        <h1>Set your goals, choose your methods, work your magic</h1>
+        <h3>Design Method Toolkit for agile, team-based projects</h3>
 
-				<?php endwhile; else : ?>
 
-					<article id="post-not-found" class="hentry cf">
-							<header class="article-header">
-								<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-						</header>
-							<section class="entry-content">
-								<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-						</section>
-						<footer class="article-footer">
-								<p><?php _e( 'This is the error message in the page-custom.php template.', 'bonestheme' ); ?></p>
-						</footer>
-					</article>
+            <p class="scream_wide_box" name="Explore Toolkit" onclick="gotoPage()">Explore Design Method Toolkit</p>
 
-				<?php endif; ?>
 
-			</div>
+            <button type="button" id = "createteam_btn" class = "scream_btn">Create a team</button>
+            </h3>
+        </div>
+    </div>
 
+
+
+
+
+    <script>
+    function gotoPage() {
+     window.location.href = 'http://localhost/create-project/';
+ }
+ //make 
+ $.ajax({
+        type: "POST",
+        url: "/webservices/PodcastService.asmx/CreateMarkers",
+        data: markers,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function(data){alert(data);},
+        failure: function(errMsg) {
+            alert(errMsg);
+        }
+  });
+</script>
 
 <?php get_footer(); ?>

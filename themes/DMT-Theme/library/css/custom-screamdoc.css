@@ -15,6 +15,7 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
 .scream_textarea{
     outline:none;
     background-color: transparent;
+    width: 44%;
     
 }
 
@@ -22,6 +23,7 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
     background-color: transparent;
     outline:none;
 }
+
 p.scream_wide_box{
     float:left;
     border: 5px solid black;
@@ -63,6 +65,7 @@ p.scream_wide_box:hover{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+<<<<<<< HEAD
 
 .scream_btn:focus{
     outline:none;
@@ -88,6 +91,7 @@ p.scream_wide_box:hover{
     width:70%;
 
 }
+<<<<<<< HEAD
 
 .centeredContent{
     margin:auto;
@@ -101,6 +105,7 @@ p.scream_wide_box:hover{
     height: 3%;
     width: 3%;
 }
+
 /*
 
 #scream_oneline {
