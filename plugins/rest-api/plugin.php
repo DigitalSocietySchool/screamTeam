@@ -12,6 +12,8 @@
 /**
  * WP_REST_Controller class.
  */
+
+
 if ( ! class_exists( 'WP_REST_Controller' ) ) {
 	require_once dirname( __FILE__ ) . '/lib/endpoints/class-wp-rest-controller.php';
 }
@@ -131,6 +133,113 @@ add_filter( 'init', '_add_extra_api_post_type_arguments', 11 );
 add_action( 'init', '_add_extra_api_taxonomy_arguments', 11 );
 add_action( 'rest_api_init', 'rest_register_settings', 0 );
 add_action( 'rest_api_init', 'create_initial_rest_routes', 0 );
+add_action( 'rest_api_init', 'slug_register_project_goal' );
+    //register project goal field for project post type  
+      function slug_register_project_goal() {
+        register_rest_field( 'project',
+          'wpcf-project-goal',
+          array(
+            'get_callback'    => 'slug_get_project_goal',
+            'update_callback' => 'slug_update_project_goal',
+            'schema'          => null,
+            )
+          );
+      }
+      /**
+       * Handler for getting custom field data.
+       *
+       * @since 0.1.0
+       *
+       * @param array $object The object from the response
+       * @param string $field_name Name of field
+       * @param WP_REST_Request $request Current request
+       *
+       * @return mixed
+       */
+      function slug_get_project_goal( $object, $field_name, $request ) {
+        return get_post_meta( $object[ 'id' ], $field_name );
+      }
+
+      /**
+       * Handler for updating custom field data.
+       *
+       * @since 0.1.0
+       *
+       * @param mixed $value The value of the field
+       * @param object $object The object from the response
+       * @param string $field_name Name of field
+       *
+       * @return bool|int
+       */
+      function slug_update_project_goal( $value, $object, $field_name ) {
+        if ( ! $value || ! is_string( $value ) ) {
+          return;
+        }
+
+        return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
+
+      }
+ //add start date for project post type
+      add_action( 'rest_api_init', 'slug_register_start_date' );
+      
+      function slug_register_project_goal() {
+        register_rest_field( 'project',
+          'wpcf-start-date',
+          array(
+            'get_callback'    => 'slug_get_start_date',
+            'update_callback' => 'slug_update_start_date',
+            'schema'          => null,
+            )
+          );
+      }
+      /**
+       * Handler for getting custom field data.
+       *
+       * @since 0.1.0
+       *
+       * @param array $object The object from the response
+       * @param string $field_name Name of field
+       * @param WP_REST_Request $request Current request
+       *
+       * @return mixed
+       */
+      function slug_get_start_date( $object, $field_name, $request ) {
+        return get_post_meta( $object[ 'id' ], $field_name );
+      }
+
+      /**
+       * Handler for updating custom field data.
+       *
+       * @since 0.1.0
+       *
+       * @param mixed $value The value of the field
+       * @param object $object The object from the response
+       * @param string $field_name Name of field
+       *
+       * @return bool|int
+       */
+      function slug_update_start_date( $value, $object, $field_name ) {
+        if ( ! $value || ! is_string( $value ) ) {
+          return;
+        }
+
+        return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
+
+      }
+
+      //add end date for project post type
+      add_action( 'rest_api_init', 'slug_register_end_date' );
+      
+      function slug_register_end_date() {
+        register_rest_field( 'project',
+          'wpcf-end-date',
+          array(
+            'get_callback'    => 'slug_get_end_date',
+            'update_callback' => 'slug_update_end_date',
+            'schema'          => null,
+            )
+          );
+      }
 
 /**
  * Adds extra post type registration arguments.
@@ -161,6 +270,7 @@ function _add_extra_api_post_type_arguments() {
 		$wp_post_types['attachment']->rest_base = 'media';
 		$wp_post_types['attachment']->rest_controller_class = 'WP_REST_Attachments_Controller';
 	}
+	
 }
 
 /**
