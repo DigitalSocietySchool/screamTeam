@@ -195,9 +195,7 @@ $(function() {
                    var jsonObj={
                     "title": { "raw": projectName}, 
                     "type": "project",
-                    "slug": "alien-team-2",
                     "status": "publish",
-
                     "wpcf-project-goal": projectGoal,
                     "wpcf-start-date" : parsedStartDate,
                     "wpcf-end-date": parsedEndDate
