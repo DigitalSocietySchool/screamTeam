@@ -149,9 +149,12 @@ function bones_scripts_and_styles() {
 
 		// Slider PIPS - jquery plugin for slider filter used with Mixitup
 		wp_register_script( 'jQuery-ui-Slider-Pips', get_stylesheet_directory_uri() . '/library/js/libs/jquery-ui-slider-pips.js', array(), '', false );
+      
+ 
 
 		// Slider PIP- css plugin for slider filter used with Mixitup
 		wp_register_style( 'slider-stylesheet', get_stylesheet_directory_uri() . '/library/css/jquery-ui-slider-pips.css', array(), '', 'all' );
+      
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -163,14 +166,14 @@ function bones_scripts_and_styles() {
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
-
+     
       wp_enqueue_style('screamdoc-stylesheet');
             wp_enqueue_style( 'bones-stylesheet' );
 
 		wp_enqueue_style( 'bones-ie-only' );
 		wp_enqueue_style( 'slider-stylesheet' );
         
-
+        
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
 		/*

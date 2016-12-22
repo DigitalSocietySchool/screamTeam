@@ -182,7 +182,7 @@ add_action( 'rest_api_init', 'slug_register_project_goal' );
  //add start date for project post type
       add_action( 'rest_api_init', 'slug_register_start_date' );
       
-      function slug_register_project_goal() {
+      function slug_register_start_date() {
         register_rest_field( 'project',
           'wpcf-start-date',
           array(
