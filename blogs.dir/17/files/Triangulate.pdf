@@ -1,0 +1,1703 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Triangulate</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.3  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="0;0">
+	<META NAME="" CONTENT="">
+	<SCRIPT SRC="/script/jquery.js"></SCRIPT>
+	<SCRIPT SRC="/script/dmi.js"></SCRIPT>
+	<SCRIPT SRC="/script/new_elements.js"></SCRIPT>
+	<SCRIPT SRC="/script/ajax.js"></SCRIPT>
+	<SCRIPT SRC="/script/utilities.js"></SCRIPT>
+	<!-- customhead -->
+	<STYLE TYPE="text/css">
+	<!--
+		H4.western { font-family: "Albany", sans-serif; font-size: 11pt; font-style: italic }
+		H4.cjk { font-family: "HG Mincho Light J"; font-size: 11pt; font-style: italic }
+		H4.ctl { font-family: "Arial Unicode MS"; font-size: 11pt; font-style: italic }
+		H3.western { font-family: "Albany", sans-serif }
+		H3.cjk { font-family: "HG Mincho Light J" }
+		H3.ctl { font-family: "Arial Unicode MS" }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="nl-NL" DIR="LTR">
+<DIV ID="container" DIR="LTR">
+	<P><BR><BR>
+	</P>
+	<DIV ID="head" DIR="LTR">
+		<P><BR><BR>
+		</P>
+		<DIV ID="menu" DIR="LTR">
+			<P><BR><BR>
+			</P>
+		</DIV>
+		<DIV ID="line" DIR="LTR">
+			<P>Triangulate</P>
+		</DIV>
+	</DIV>
+	<DIV ID="main" DIR="LTR">
+		<P><BR><BR>
+		</P>
+		<DIV ID="column_left" DIR="LTR">
+			<P>Input 
+			</P><A NAME="2append"></A><FORM ACTION="../Downloads" METHOD="POST">
+				<TABLE CELLPADDING=2 CELLSPACING=2>
+					<TR>
+						<TD>
+							<TABLE CELLPADDING=2 CELLSPACING=2>
+								<TR>
+									<TD>
+										<P>List name (optional):<BR><INPUT TYPE=TEXT NAME="name[]" VALUE="2013" SIZE=26 STYLE="width: 5.61cm; height: 0.74cm">
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P>One entity per line:<TEXTAREA NAME="list[]" ROWS=14 COLS=30 STYLE="width: 6.91cm; height: 6.91cm">Design
+Designer
+Technology
+media
+interaction
+communication
+new
+digital
+world
+between
+Social
+graphic
+from
+creative
+research
+multimedia
+msc
+game
+culture
+researcher
+passion
+games
+artist
+industrial
+development
+visual
+always
+looking
+makes
+performance
+art
+works
+interactive
+
+designs
+stefan
+data
+based
+arts
+academy
+think
+work
+driven
+better
+sound
+combining
+people</TEXTAREA>
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P><INPUT TYPE=CHECKBOX NAME="checked[]" VALUE="clist0" CHECKED STYLE="width: 0.35cm; height: 0.35cm">Include
+										in detailed analysis.</P>
+									</TD>
+								</TR>
+							</TABLE>
+							<TABLE CELLPADDING=2 CELLSPACING=2>
+								<TR>
+									<TD>
+										<P>List name (optional):<BR><INPUT TYPE=TEXT NAME="name[]" VALUE="2012" SIZE=26 STYLE="width: 5.61cm; height: 0.74cm">
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P>One entity per line:<TEXTAREA NAME="list[]" ROWS=14 COLS=30 STYLE="width: 6.91cm; height: 6.91cm">media
+designer
+new
+design
+researcher
+interaction
+digital
+graphic
+creative
+developer
+world
+field 
+more 
+relevant
+strong
+games
+loves</TEXTAREA>
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P><INPUT TYPE=CHECKBOX NAME="checked[]" VALUE="clist1" CHECKED STYLE="width: 0.35cm; height: 0.35cm">Include
+										in detailed analysis.</P>
+									</TD>
+								</TR>
+							</TABLE>
+							<P><BR><BR>
+							</P>
+						</TD>
+						<TD>
+							<TABLE CELLPADDING=2 CELLSPACING=2>
+								<TR>
+									<TD>
+										<P>List name (optional):<BR><INPUT TYPE=TEXT NAME="name[]" VALUE="2011" SIZE=26 STYLE="width: 5.61cm; height: 0.74cm">
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P>One entity per line:<TEXTAREA NAME="list[]" ROWS=14 COLS=30 STYLE="width: 6.91cm; height: 6.91cm">media
+new
+Designer
+design
+technology
+people
+creative
+creating
+user
+experiences
+make
+behavior
+developer
+Interaction
+fun
+critical
+insights
+about
+conceptual
+visual
+loves
+social
+games
+researcher
+all
+combining
+who
+create
+interactive
+See
+experience
+game
+how
+stuff
+crossmedia
+culture
+innovative
+creates
+concept</TEXTAREA>
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P><INPUT TYPE=CHECKBOX NAME="checked[]" VALUE="clist2" CHECKED STYLE="width: 0.35cm; height: 0.35cm">Include
+										in detailed analysis.</P>
+									</TD>
+								</TR>
+							</TABLE>
+							<P><BR><BR>
+							</P>
+						</TD>
+						<TD>
+							<TABLE CELLPADDING=2 CELLSPACING=2>
+								<TR>
+									<TD>
+										<P>List name (optional):<BR><INPUT TYPE=TEXT NAME="name[]" VALUE="2010" SIZE=26 STYLE="width: 5.61cm; height: 0.74cm">
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P>One entity per line:<TEXTAREA NAME="list[]" ROWS=14 COLS=30 STYLE="width: 6.91cm; height: 6.91cm">media
+new
+design
+designer
+create
+information
+technology
+world
+graphic
+multimedia
+creative
+interaction
+ways
+interactive
+creating
+people
+interested
+cross
+using
+innovation
+end
+artist
+visual
+life
+critical
+young
+concepts
+hekje
+motion
+communication
+art
+graphics
+use
+inspire
+professional</TEXTAREA>
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P><INPUT TYPE=CHECKBOX NAME="checked[]" VALUE="clist3" CHECKED STYLE="width: 0.35cm; height: 0.35cm">Include
+										in detailed analysis.</P>
+									</TD>
+								</TR>
+							</TABLE>
+							<P><BR><BR>
+							</P>
+						</TD>
+						<TD>
+							<TABLE CELLPADDING=2 CELLSPACING=2>
+								<TR>
+									<TD>
+										<P>List name (optional):<BR><INPUT TYPE=TEXT NAME="name[]" VALUE="2009" SIZE=26 STYLE="width: 5.61cm; height: 0.74cm">
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P>One entity per line:<TEXTAREA NAME="list[]" ROWS=14 COLS=30 STYLE="width: 6.91cm; height: 6.91cm">designer
+media
+artist
+interaction
+cross
+music
+web
+developer</TEXTAREA>
+																				</P>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<P><INPUT TYPE=CHECKBOX NAME="checked[]" VALUE="clist4" CHECKED STYLE="width: 0.35cm; height: 0.35cm">Include
+										in detailed analysis.</P>
+									</TD>
+								</TR>
+							</TABLE>
+							<P><BR><BR>
+							</P>
+						</TD>
+						<TD></TD>
+					</TR>
+				</TABLE>
+				<P><A NAME="addlist"></A><A HREF="javascript:add(6);%20reSizeWidth();">Add
+				another list</A>, <A HREF="javascript:remove()">Remove last list</A>
+				<BR><BR>Case: <INPUT TYPE=RADIO NAME="case" VALUE="sensitive" STYLE="width: 0.35cm; height: 0.35cm">
+				sensitive <INPUT TYPE=RADIO NAME="case" VALUE="insensitive" CHECKED STYLE="width: 0.35cm; height: 0.35cm">
+				insensitive <INPUT TYPE=CHECKBOX NAME="submit[]" VALUE="detailed" STYLE="width: 0.35cm; height: 0.35cm">
+				Detailed <INPUT TYPE=SUBMIT VALUE="Triangulation" STYLE="width: 2.81cm; height: 0.93cm"></P>
+			</FORM>
+		</DIV>
+		<DIV ID="column_right" DIR="LTR">
+			<P STYLE="margin-bottom: 0cm"><A NAME="sampleout"></A>Triangulate,
+			an Introduction Enter two or more lists of URLs or other items to
+			discover commonalities among them. Possible visualizations include
+			a Venn Diagram.1. Input two or more list of URLs or other named
+			entities (one per line). 2. Select detailed analysis for showing
+			which items appear on which lists. The default, basic analysis
+			shows which entities the lists have in common, without the
+			specification of which lists have which entities in common. Note:
+			The basic analysis also displays a visualization. The first one
+			shows columns retaining the order of the lists inputted, the
+			second reorders each column by frequency. Colors depict in how
+			many of the compared lists a particular result is in. Triangulate,
+			Sample Output (<A HREF="javascript:showHide(%22sampleout%22);">Toggle</A>)
+			Triangulation is a useful tool for simple analysis such as
+			cleaning up duplicate items in a list. The tool can also be used
+			as part of a larger project such as cross spherical analysis. Here
+			the tool is used to analyse and output shared and specific items
+			per list(s). One possible visual output is a venn diagram, which
+			requires an extra step in Illustrator. In the sample project
+			<A HREF="http://wiki.digitalmethods.net/Dmi/Nofollow#Results_Comparing_the_three_tagc" TARGET="_new">Indexing
+			Issues for the Blogosphere</A> three tag clouds are analyzed for
+			shared and specific urls. 
+			</P>
+			<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><IMG SRC="http://wiki.digitalmethods.net/pub/Dmi/ToolTriangulation/nofollow_small.png" NAME="Afbeeldingen1" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+		</DIV>
+	</DIV>
+	<H4 CLASS="western"><SCRIPT>
+var nrTriangulateWindows =8;
+function reSizeWidthOnce() {
+    var left = $('#column_left textarea').width();
+    $('#column_left').css('width','auto');
+    var right = $('#column_right').width();
+    var container = $('#container');
+    if((nrTriangulateWindows*left) + right > container.width()) {
+        $('#main').width((nrTriangulateWindows*left));
+    }
+}
+    $(document).ready(function() {
+reSizeWidthOnce();
+    });
+</SCRIPT>Common
+	to 5 of the lists:</H4>
+	<P>designermediainteraction</P>
+	<H4 CLASS="western">Common to 4 of the lists:</H4>
+	<P>designnewcreative</P>
+	<H4 CLASS="western">Common to 3 of the lists:</H4>
+	<P>technologyworldgraphicresearchergamesartistvisualinteractivepeopledeveloper</P>
+	<H4 CLASS="western">Common to 2 of the lists:</H4>
+	<P>communicationdigitalsocialmultimediagamecultureartcombininglovescreatingcriticalcreatecross</P>
+	<H4 CLASS="western">Only in one of the lists:</H4>
+	<P>betweenfromresearchmscpassionindustrialdevelopmentalwayslookingmakesperformanceworksdesignsstefandatabasedartsacademythinkworkdrivenbettersoundfieldmorerelevantstronguserexperiencesmakebehaviorfuninsightsaboutconceptualallwhoseeexperiencehowstuffcrossmediainnovativecreatesconceptinformationwaysinterestedusinginnovationendlifeyoungconceptshekjemotiongraphicsuseinspireprofessionalmusicweb</P>
+	<H3 CLASS="western">Lists colored by frequency, original order</H3>
+	<TABLE CELLPADDING=2 CELLSPACING=2>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>1</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>2</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>3</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>4</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>5</P>
+			</TD>
+			<TD BGCOLOR="#1e5486">
+				<P>6</P>
+			</TD>
+			<TD BGCOLOR="#97a872">
+				<P>7</P>
+			</TD>
+			<TD BGCOLOR="#dbd623">
+				<P>8</P>
+			</TD>
+			<TD BGCOLOR="#db9549">
+				<P>9</P>
+			</TD>
+			<TD BGCOLOR="#c95b5b">
+				<P>10</P>
+			</TD>
+		</TR>
+	</TABLE>
+	<TABLE CELLPADDING=2 CELLSPACING=2>
+		<TR>
+			<TD>
+				<P>2013</P>
+			</TD>
+			<TD>
+				<P>2012</P>
+			</TD>
+			<TD>
+				<P>2011</P>
+			</TD>
+			<TD>
+				<P>2010</P>
+			</TD>
+			<TD>
+				<P>2009</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>technology</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>artist</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>researcher</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>technology</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>create</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>cross</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>communication</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>people</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>information</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>music</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>digital</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>technology</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>web</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>digital</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>graphic</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>creating</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>world</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>developer</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>world</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>user</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>graphic</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>between</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>developer</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>experiences</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>multimedia</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>social</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>world</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>make</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>graphic</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>field</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>behavior</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>from</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>more</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>developer</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>ways</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>relevant</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>interactive</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>research</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>strong</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>fun</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>creating</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>multimedia</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>games</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>critical</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>people</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>msc</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>loves</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>insights</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>interested</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>game</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>about</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>cross</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>culture</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>conceptual</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>using</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>researcher</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>visual</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>innovation</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>passion</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>loves</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>end</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>games</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>social</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>artist</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>artist</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>games</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>visual</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>industrial</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>researcher</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>life</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>development</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>all</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>critical</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>visual</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>combining</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>young</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>always</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>who</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>concepts</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>looking</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>create</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>hekje</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>makes</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>interactive</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>motion</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>performance</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>see</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>communication</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>art</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>experience</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>art</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>works</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>game</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>graphics</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>interactive</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>how</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>use</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>stuff</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>inspire</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>designs</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>crossmedia</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>professional</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>stefan</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>culture</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>data</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>innovative</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>based</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>creates</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>arts</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>concept</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>academy</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>think</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>work</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>driven</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>better</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>sound</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>combining</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+	</TABLE>
+	<H3 CLASS="western">Lists colored by frequency, ordered by frequency
+	and alphabet</H3>
+	<TABLE CELLPADDING=2 CELLSPACING=2>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>1</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>2</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>3</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>4</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>5</P>
+			</TD>
+			<TD BGCOLOR="#1e5486">
+				<P>6</P>
+			</TD>
+			<TD BGCOLOR="#97a872">
+				<P>7</P>
+			</TD>
+			<TD BGCOLOR="#dbd623">
+				<P>8</P>
+			</TD>
+			<TD BGCOLOR="#db9549">
+				<P>9</P>
+			</TD>
+			<TD BGCOLOR="#c95b5b">
+				<P>10</P>
+			</TD>
+		</TR>
+	</TABLE>
+	<TABLE CELLPADDING=2 CELLSPACING=2>
+		<TR>
+			<TD>
+				<P>2013</P>
+			</TD>
+			<TD>
+				<P>2012</P>
+			</TD>
+			<TD>
+				<P>2011</P>
+			</TD>
+			<TD>
+				<P>2010</P>
+			</TD>
+			<TD>
+				<P>2009</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>designer</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>interaction</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+			<TD BGCOLOR="#4f0227">
+				<P>media</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>creative</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>artist</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>design</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>developer</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#aa8888">
+				<P>new</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>cross</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>artist</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>developer</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>developer</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>artist</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>music</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>games</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>games</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>games</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>graphic</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>web</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>graphic</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>graphic</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>interactive</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>interactive</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>interactive</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>researcher</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>people</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>people</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>people</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>world</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>researcher</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>technology</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>researcher</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>digital</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>technology</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>visual</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>technology</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>loves</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>visual</P>
+			</TD>
+			<TD BGCOLOR="#c1a37c">
+				<P>world</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>visual</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>field</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>combining</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>art</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#c1a37c">
+				<P>world</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>more</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>create</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>communication</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>art</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>relevant</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>creating</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>create</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>combining</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>strong</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>critical</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>creating</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>communication</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>culture</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>critical</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>culture</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>game</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>cross</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>digital</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>loves</P>
+			</TD>
+			<TD BGCOLOR="#ffed92">
+				<P>multimedia</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>game</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#ffed92">
+				<P>social</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>concepts</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>multimedia</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>about</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>end</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#ffed92">
+				<P>social</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>all</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>graphics</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>academy</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>behavior</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>hekje</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>always</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>concept</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>information</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>arts</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>conceptual</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>innovation</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>based</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>creates</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>inspire</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>better</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>crossmedia</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>interested</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>between</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>experience</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>life</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>data</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>experiences</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>motion</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>designs</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>fun</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>professional</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>development</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>how</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>use</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>driven</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>innovative</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>using</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>from</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>insights</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>ways</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>industrial</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>make</P>
+			</TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>young</P>
+			</TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>looking</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>see</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>makes</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>stuff</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>msc</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>user</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>passion</P>
+			</TD>
+			<TD></TD>
+			<TD BGCOLOR="#eaf0ca">
+				<P>who</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>performance</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>research</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>sound</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>stefan</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>think</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>work</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+		<TR>
+			<TD BGCOLOR="#eaf0ca">
+				<P>works</P>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+			<TD></TD>
+		</TR>
+	</TABLE>
+</DIV>
+</BODY>
+</HTML>
