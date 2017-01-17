@@ -18,7 +18,7 @@
             
             <!-- Popup header (blue area)-->
            <div id = "popupHeader" style = "background-color:#c5e3e3">
-            <span class ="close">&times;</span>
+            <span class ="close" onclick = "hide('MVP')" >&times;</span>
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/mvp.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "> <i><strong>The minimal viable product is</strong> a clickable prototype that shows how a chatbot could function in the SCREAM! app and in Slack</i></h2>
            </div>
@@ -43,12 +43,12 @@
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
                   
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                  <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>http://8ldzl4.axshare.com/#g=1&p=home</i></p>
                       <p>PROTOTYPE - Chatbot integrated in Slack </p>
                   </div>  
                   
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                  <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://xd.adobe.com/view/7a58d2f8-b8de-4158-9066-0450d17c4b0d/</i></p>
                          <p>PROTOTYPE - Chatbot integrated in the app </p>
                   </div> <br>
@@ -62,7 +62,7 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
+            <span class ="close" onclick = "hide('popupPage1')">&times;</span>
            <p><i>SCREAM! Tool project // Sprint 1</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>The behavior of the chatbot should not be human like and it should be easy to communicate with it and it should focus on 'follow-up, 'guidance' and 'motivation'.</i></h2>
@@ -107,20 +107,20 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://drive.google.com/open?id=1H-SN-L_FqghTdbcFckDs7IUBy8h57xX97gi1ICxXrSk</i></p>
                       <p>LITERATURE REVIEW - Summary</p>
                   </div> 
                   
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://drive.google.com/open?id=1kWJMha99C-GJLoSnchZQE8HfaE1ni1lkIEk22xPXbjM</i></p>
                       <p>LITERATURE REVIEW - Bunch of links </p>
                   </div>  
                   
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                  <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://drive.google.com/open?id=14yOv0cnUxLuUr8cVq73IaBEwn0lRMl6G2DXPkP85lIA</i></p>
                       <p>LITERATURE REVIEW - Why add a bot?</p>
-                  </div> <br><br><br><br><br>
+                  </div>
             </div>
                 
             <div id = "tab13">
@@ -138,10 +138,10 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://drive.google.com/open?id=0B1S0sQLj0CQJMVNZNjBlWE5UUVk</i></p>
                       <p>FLOWCHART SCREAM APP- We reverse engineered the flow of the SCREAM app</p>
-                  </div> <br>
+                  </div> 
                 
             </div>
             <div id = "tab14">
@@ -179,15 +179,15 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+               <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://drive.google.com/open?id=1-q07mto1ZGYYT1RoHkzSmc5RaOGezTAYfVRwCtH3gdM</i></p>
                       <p>SCENARIOS- These scenarios show where the chatbot could interfere in the SCREAM app flow</p>
                   </div>  
                   
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://drive.google.com/open?id=14yOv0cnUxLuUr8cVq73IaBEwn0lRMl6G2DXPkP85lIA</i></p>
                       <p>SCRIPT - This is the script that we wrote for our chatbot simulation</p>
-                  </div> <br><br><br><br><br>
+                  </div> 
             </div>
             <div id = "tab15">
                 <p style = "color:grey; font-size:0.8em;"><i> Activity - ROEF festival</i></p>  
@@ -219,13 +219,8 @@
                   <div style = " color:#66afad; padding:0px;">
                        <img id = "profilePic" alt = "Add a project photo" width = "1000" height = "700px" src="https://i.gyazo.com/ce4403c06b097b08c4d10a42ecedc5f2.png"/>
                       <p>THE VISUALIZATION - This picture might give an idea of how our visualization looked like.</p><br>
-                  </div>  
-                  
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
-                      <p style = "color:black;"><i>https://drive.google.com/open?id=14yOv0cnUxLuUr8cVq73IaBEwn0lRMl6G2DXPkP85lIA</i></p>
-                      <p>SCRIPT - This is the script that we wrote for our chatbot simulation?</p>
-                  </div> 
-                
+                  </div>   
+            
             </div>
         </section>
         </div>
@@ -238,7 +233,7 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
+            <span class ="close" onclick = "hide('popupPage2')">&times;</span>
            <p><i>SCREAM! Tool project // Sprint 1</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>The chatbot is not the solution for our problem.</i></h2>
@@ -316,7 +311,7 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                  <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://drive.google.com/open?id=0B1YtrVdQSLAXTzM2UHIxTGxkeDQ</i></p>
                       <p>ILLUSTRATION - We tried to visualize our process thus far</p>
                   </div>  
@@ -359,7 +354,7 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
+            <span class ="close" onclick = "hide('popupPage3')">&times;</span>
            <p><i>SCREAM! Tool project // Sprint 1</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>The occurrence of design waste will not be solved by a chatbot, but could be solved by designing a better way for users to document their process.</i></h2>
@@ -446,7 +441,7 @@
                         <!-- Sprint menu text/options
                         Code from: http://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_bottom-->
                         <span class="tooltiptext">
-                            <span style = "color:grey;"> SPRINT 2 </span> <br>
+                            <span><a href="/index.php?page_id=1419" style = "text-decoration:none; color:grey;">SPRINT 2</a>  </span> <br>
                             <span style = "color:grey;"> SPRINT 3 </span> <br>
                             <span style = "color:grey;"> SPRINT 4 </span> <br>
                             <span style = "color:grey;"> SPRINT 5 </span> <br>
@@ -471,7 +466,7 @@
                <strong>The aim for this sprint is to</strong>  identify and validate a set of functional requirements for the chatbot, and translate the findings into a clickable prototype.  </li>
                <br><br><br>
                <li style=" position:relative; display:inline-block; padding-left:60px;" id = "mvpBtn"><img style = "position:absolute; top:30%; left:1px;" id = "sprint_sum_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/mvp.svg"/>
-                   <strong>The minimal viable product is</strong> a clickable prototype that shows how a chatbot could function in the SCREAM! app and in Slack<p><br></p></li>
+                   <strong>The minimal viable product is</strong> a clickable prototype that shows how a chatbot could function in the SCREAM! app and in Slack</li>
                <br><br><br>
                <li style=" position:relative; display:inline-block; padding-left:60px;"><img style = "position:absolute; top:30%; left:1px;" id = "sprint_sum_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Conclusion_1.svg"/>
                    <strong>The conclusion for this sprint is</strong> the chatbot was not the solution for our problem, therefore we decided to focus on the way Multidisplinary Design Teams document their process</li>
@@ -494,6 +489,7 @@
        
 <!-- Tab text here (inside)-->
     <section id="second-tab-group" class="tabgroup">
+        <!--Key insights -->
       <div id="tab6">
         <div id = "keyInsight1">
             The chatbot should focus on ‘follow-up’, ‘guidance’ and ‘motivation’. The behavior of the chatbot should not be human like and it should be easy to communicate with it. 
@@ -507,11 +503,12 @@
           The occurrence of design waste will not be solved by a chatbot, but could be solved by designing a better way for users to document their process. 
         </div>
       </div>
-        
+        <!-- Previous steps-->
       <div id="tab7">
           <p>This is the first sprint, therefore there are no previous steps.</p>
       </div>
         
+        <!-- Next steps -->
       <div id="tab8">
          <p>In the second sprint we investigate more thoroughly who the actual user of Scream is. Besides that, how do these users document their process (if, how, why, when)? Sharing is an important part of preventing design waste as well. Therefore we need to find out how and if we can motivate teams to share their process with the world. </p>
       </div>
@@ -602,15 +599,8 @@
             MVP.style.display= "block";
         }
         
-        //Closes key insight/MVP when pressed 
-        closeBtn.onclick = function(){
-            popup1.style.display = "none";
-            popup2.style.display = "none";
-            popup3.style.display = "none";
-            MVP.style.display="none";
-            alert("b");
+        //Function for hiding the popup
+        function hide(popup){
+            document.getElementById(popup).style.display="none";
         }
-        
         </script>
-
-<?php get_footer(); ?>

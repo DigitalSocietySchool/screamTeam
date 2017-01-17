@@ -16,7 +16,7 @@
             
             <!-- Popup header (blue area)-->
            <div id = "popupHeader" style = "background-color:#c5e3e3">
-            <span class ="close">&times;</span>
+           <span class ="close" onclick = "hide('MVP')" >&times;</span>
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/mvp.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "> <i><strong>The minimal viable product is</strong> an infographic that maps the target users’ documentation process.</i></h2>
            </div>
@@ -47,14 +47,13 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                        <p style = "color:black;"><i>https://drive.google.com/open?id=0B2DcaGGKzkPxX19HOUpoeGZhNDA</i></p>
                       <p>THE INFOGRAPHIC - This is the whole presentation (with the infographic) that we had prepared for our product owners </p>
                  
                   </div>  <br><br>
                 </div>
         </div>
-    </div>
 </div> <!-- END POP UP PAGE MVP-->  
  <!--KEY INSIGHT 1 - POP UP PAGE-->        
     <div class = "popupPage" id = "popupPage1">
@@ -62,8 +61,8 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
-           <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+            <span class ="close" onclick = "hide('popupPage1')">&times;</span>
+           <p><i>SCREAM! Tool project // Sprint 2</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>People have personal preferences when it comes to documenting</i></h2>
            </div>
@@ -190,7 +189,7 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                        <p style = "color:black;"><i>https://drive.google.com/open?id=0B2DcaGGKzkPxX19HOUpoeGZhNDA</i></p>
                       <p>THE INFOGRAPHIC - This is the whole presentation (with the infographic) that we had prepared for our product owners </p>
                   </div>       
@@ -206,8 +205,8 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
-           <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+            <span class ="close" onclick = "hide('popupPage2')">&times;</span>
+           <p><i>SCREAM! Tool project // Sprint 2</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>People already document consistently, but not for the purpose of sharing (with the team and/or the world). This makes the documentation only understandable for themselves.</i></h2>
            </div>
@@ -299,8 +298,8 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
-           <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+             <span class ="close" onclick = "hide('popupPage3')">&times;</span>
+           <p><i>SCREAM! Tool project // Sprint 2</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>It is hard to classify behavior, especially with teams that are multidisciplinary and international. </i></h2>
            </div>
@@ -308,13 +307,13 @@
             <!-- popup tabs -->
             <div class="wrapper" style = "background-color:white; ">
             <ul class="tabs2 clearfix" data-tabgroup="second-tab-group" style="background-color:#f5da81; margin-top:0px;">
-              <li><a href="#tab20" class="active2">PERSONAS</a></li>
-              <li><a href="#tab21">PEER PITCHS</a></li>
+              <li><a href="#tab18" class="active2">PERSONAS</a></li>
+              <li><a href="#tab19">PEER PITCHS</a></li>
             </ul>
 
         <!-- Tab text here (inside)-->
             <section id="second-tab-group" class="tabgroup">
-                <div id="tab20">
+                <div id="tab18">
                 <p style = "color:grey; font-size:0.8em;"><i>Method - Persona</i></p>
 
                   <!-- Insights --> 
@@ -336,7 +335,7 @@
                     </div> <br>
                  </div>
                 
-                <div id = "tab21">
+                <div id = "tab19">
                     <p style = "color:grey; font-size:0.8em;"><i> Activity - Peer pitch</i></p>  
                 <!-- Insights --> 
                   <p style = "font-size:1em;"><strong>WHAT WERE THE INSIGHTS FROM THIS EVENT?</strong></p>
@@ -378,8 +377,8 @@
 
         <!-- Popup header (yellow area)-->
        <div id = "popupHeader">
-        <span class ="close">&times;</span>
-       <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+         <span class ="close" onclick = "hide('popupPage4')">&times;</span>
+       <p><i>SCREAM! Tool project // Sprint 2</i></p> 
         <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
            <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>Quantifying qualitative data can be really hard, because it is subjected to interpretation.</i></h2>
        </div>
@@ -466,7 +465,7 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                  <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                        <p style = "color:black;"><i>https://drive.google.com/open?id=0B2DcaGGKzkPxX19HOUpoeGZhNDA</i></p>
                       <p>THE INFOGRAPHIC - This is the whole presentation (with the infographic) that we had prepared for our product owners </p>
                     </div>
@@ -493,7 +492,7 @@
                 <!-- Sprint menu text/options
                 Code from: http://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_bottom-->
                 <span class="tooltiptext">
-                    <span style = "color:grey;"> SPRINT 1 </span> <br>
+                    <span><a href="/index.php?page_id=1416" style = "text-decoration:none; color:grey;">SPRINT 1</a>  </span> <br>
                     <span style = "color:grey;"> SPRINT 3 </span> <br>
                     <span style = "color:grey;"> SPRINT 4 </span> <br>
                     <span style = "color:grey;"> SPRINT 5 </span> <br>
@@ -541,6 +540,7 @@
        
 <!-- Tab text here (inside)-->
     <section id="second-tab-group" class="tabgroup">
+        <!-- Key insights -->
       <div id="tab6">
         <div id = "keyInsight1">
             People have personal preferences when it comes to documenting.
@@ -558,11 +558,11 @@
             Quantifying qualitative data can be really hard, because it is subjected to interpretation. 
         </div>
       </div>
-        
+        <!-- Previous steps -->
       <div id="tab7">
           <p>The chatbot was not the solution for our problem, therefore we decided to focus on the way Multidisciplinary Design Teams document their process.</p>
       </div>
-        
+        <!-- Next steps -->
       <div id="tab8">
          <p>1.We will focus on “how do people look for and read documentation?”. <br>
              2.We will start on making and testing a specific part of our documentation tool. </p>
@@ -625,6 +625,8 @@
 
     })
     </script>
+
+
         
 <!--Script for the popup functionality-->
         <script>
@@ -657,17 +659,11 @@
         mvpBtn.onclick = function() {
             MVP.style.display= "block";
         }
-        //Closes key insight when pressed 
-        closeBtn.onclick = function(){
-            popup1.style.display = "none";
-            popup2.style.display = "none";
-            popup3.style.display = "none";
-            popup4.style.display = "none";
-            MVP.style.display="none";
-            alert("b");
+        
+        //Function for hiding the popup (usnig the closeBtn)
+        function hide(popup){
+            document.getElementById(popup).style.display="none";
         }
         
         </script>
-      </div> 
-
-<?php get_footer(); ?>
+</div> <!-- End main content -->
