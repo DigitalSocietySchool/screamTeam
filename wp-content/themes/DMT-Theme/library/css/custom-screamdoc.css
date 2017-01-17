@@ -7,6 +7,7 @@ input[type="text"].scream_oneline {
     border-bottom: 2px solid black;
     background-color: transparent; 
     outline:none;
+    max-width:100%;
 }
 input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus{
     background-color: transparent !important;
@@ -15,12 +16,26 @@ input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus
 .scream_textarea{
     outline:none;
     background-color: transparent;
+    color:black;
 }
 
 .scream_textarea:focus{
     background-color: transparent;
     outline:none;
+     color:black;
 }
+
+.scream_textarea_border{
+    background-color: transparent;
+    outline: 1px solid grey;
+    color:black;
+}
+.scream_textarea_border:focus{ 
+    background-color: transparent;
+    outline: 1px solid grey;
+    color:black;
+}
+
 
 p.scream_wide_box{
     float:left;
@@ -36,36 +51,8 @@ p.scream_wide_box:hover{
     background-color: silver;
     outline:none;
 }
-/*https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-
-.inputfile + label {
-    font-size: 1.25em;
-    font-weight: 700;
-    border: 1px solid black;
-    color: black;
-    background-color: transparant;
-    display: inline-block;
-    cursor: pointer; /* "hand" cursor */
-    padding:60px;
-    margin:30px;
-}
-
-.inputfile:focus + label,
-.inputfile + label:hover {
-    background-color: transparent;
-    border:1px solid black;
-
-}
 /* ==========================================================================
-   TEXT & BORDERS
+   TEXT , BORDERS & BLOCKS
    ========================================================================== */
 
 .readOnly{
@@ -77,6 +64,146 @@ p.scream_wide_box:hover{
     background-color:white;
     border:2px solid black;
     width: 300px;
+}
+
+.oneLineBorder{
+    background-color:transparent;
+    border:none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+ .customFileUploadBlock{
+    display:inline-block;
+    cursor:pointer;
+    background-color:white;
+    width:400px;
+    height:200px;
+    position:relative;
+    bottom:-50px;
+    color:#66afad;
+}
+
+#projectHeader{
+    background-color: #ececec;
+    -moz-box-shadow: 1px 1px 3px 2px #d3d3d3;
+    -webkit-box-shadow: 1px 1px 3px 2px #d3d3d3;
+    box-shadow:         1px 1px 3px 2px #d3d3d3;
+}
+
+#WIP
+{
+    position:relative;
+    bottom:-80px;
+    padding-left: 40px;
+}
+/* ==========================================================================
+   PLACEHOLDERS
+   ========================================================================== */
+
+::-webkit-input-placeholder {
+   color: #66afad;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #66afad;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #66afad;  
+}
+
+:-ms-input-placeholder {  
+   color: #66afad;  
+}
+
+
+/* ==========================================================================
+   TOOLTIPS & POP UPS
+   ========================================================================== */
+
+.tooltip
+{
+    position: relative;
+    display:inline-block;
+    border:none;
+}
+
+ .tooltip .tooltiptext
+{
+    visibility: hidden;
+    width:350px;
+    background-color: white;
+    color:black;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 40px;
+    
+    /*Position*/
+    position: absolute;
+    z-index: 1;
+    top:25px;
+    left:60px;
+    margin-left: -60px;
+    
+    /*Shadow*/
+    -moz-box-shadow: 4px 4px 4px #d3d3d3;
+    -webkit-box-shadow: 4px 4px 4px #d3d3d3;
+    box-shadow: 4px 4px 4px #d3d3d3;
+}
+
+
+.tooltip:hover .tooltiptext
+{
+    visibility: visible;
+}
+
+#popupHeader{
+    background-color:#f5da81;
+    -moz-box-shadow: 0 5px 5px -5px  grey;
+    -webkit-box-shadow:0 5px 5px -5px  grey;
+    box-shadow:         0 5px 5px -5px  grey;
+
+}
+
+/*Code from http://www.w3schools.com/howto/howto_css_modals.asp*/
+.popupPage{
+    text-align:left;
+    margin:auto;
+    padding:0;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/*For some reason, background won't turn white.  However, could make the background from the wrapper white..
+EDIT: DID THE ABOVE.*/
+.popup-content{
+    background: white;
+    margin:auto;/*15% auto;*/
+    width: 50%;
+    height:auto;
+    z-index: 1;
+}
+
+/* The Close Button */
+.close {
+
+    float: right;
+    font-size: 50px;
+    margin:10px;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* ==========================================================================
@@ -96,8 +223,36 @@ p.scream_wide_box:hover{
     outline:none;
 }
 
-.upload{
-    border:none;
+.scream_btn_blue{
+    background-color: transparent;
+    color: #66afad;
+    border:2px solid #66afad;
+    text-align:center;
+    width:30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.scream_btn_orange{
+    background-color: orange;
+    color: white;
+    border:2px solid orange;
+    text-align:center;
+    width:30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+   #realFileUploadBtn{
+   opacity: 0;
+   position:absolute;
+   left:1px;
+   background-color:orange;
+}
+
+#mvpBtn:hover{
+    -webkit-box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px grey;
+    -moz-box-shadow: 0 0 10px grey;
 }
 /* ==========================================================================
    PAGE + SIDEBAR DIVISION 
@@ -119,169 +274,144 @@ p.scream_wide_box:hover{
 
 .centeredContent{
     margin:auto;
-    width: 50%;
     text-align: center;
+    width:auto;
+    padding:0;
+}
+
+#location{
+    display:inline-block;
+    vertical-align:middle;
+    width:auto;
+}
+
+.team_info{
+    float:right;
+    width:30%;
+    margin-top: -210px;
+}
+
+.project_goal{
+    width:50%;
+    margin-left: 350px;
 }
 /* ==========================================================================
-   SVG ICONS
+   SVG ICONS AND IMAGES
    ========================================================================== */
 #member_icon{
-    height: 3%;
-    width: 3%;
+    height: 25px;
 }
 
-/*
-
-#scream_oneline {
-    border: none;
-    border-bottom: 2px solid black;
-    background-color: transparent;
-    outline:none;
+.location_icon{
+    height: 30px;
 }
 
-#scream_oneline:focus {
-    background-color: transparent;
-
+#profilePic{
+    border:none;
 }
-#project_goal
-{
-    outline:none;
-    background-color: transparent;
-    width: 500px;
+
+#sprint_sum_icon{
+    height:35px;
+    width: 40px;
+    color:grey;
     
 }
 
-#project_goal:focus
-{
-    background-color: transparent;
-    outline:none;
+#tabIcon{
+    height:16px;
 }
 
-#readOnly
+#lightBulb
 {
-    font-weight: bold;
-    padding: 10px;
-    padding-top: 20px;
-}
-#container_proj
-{
-    background-color:white;
-    border:1px solid black;
-    width: 250px;
+    height:80px;
+    vertical-align: middle;
+    width:auto;
+    margin-left:2em;
+    
 }
 
-#project_btn{
-    background-color: transparent;
-    color: black;
-    border:2px solid black;
-    text-align:center;
-    width:250px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+#insight_icon{
+    height:30px;
+    width: 20px;
+    color:grey;
 }
-*/
+
 
 /* ==========================================================================
    TABS
    ========================================================================== */
 
-/* Alonso */
-.menu--alonso .menu__item {
-	margin: 0;
+.wrapper {
+  margin: 30px auto;
+  color: #555;
+  font-size: 14px;
+  line-height: 24px;
 }
-
-.menu--alonso .menu__link {
-	width: 120px;
-	height: 3em;
-	text-align: center;
-	color: #b5b5b5;
-	-webkit-transition: color 0.3s;
-	transition: color 0.3s;
-    float:left;
+h1 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-.menu--alonso .menu__link:hover,
-.menu--alonso .menu__link:focus {
-	color: #929292;
+h1 + p {
+  text-align: center;
+  margin: 20px 0;
 }
-
-.menu--alonso .menu__item--current .menu__link {
-	color: #d94f5c;
-	-webkit-transition: color 0.5s;
-	transition: color 0.5s;
+.tabs li {
+  float: left;
+  width: 25%;
 }
+.tabs a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid #888;
 
-.menu--alonso .menu__line {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 120px;
-	height: 2px;
-	pointer-events: none;
-	border: 1px solid #fff;
-	border-width: 0 45px;
-	background: #d94f5c;
-	-webkit-transition: -webkit-transform 0.5s;
-	transition: transform 0.5s;
-	-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1);
-	-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
-	transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
-}
-
-.menu--alonso .menu__item:nth-child(1).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-
-.menu--alonso .menu__item:nth-child(2).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(100%, 0, 0);
-	transform: translate3d(100%, 0, 0);
-}
-
-.menu--alonso .menu__item:nth-child(3).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(200%, 0, 0);
-	transform: translate3d(200%, 0, 0);
-}
-
-.menu--alonso .menu__item:nth-child(4).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(300%, 0, 0);
-	transform: translate3d(300%, 0, 0);
-}
-
-.menu--alonso .menu__item:nth-child(5).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(400%, 0, 0);
-	transform: translate3d(400%, 0, 0);
-}
-
-@media screen and (max-width:55em) {
-	.menu--alonso .menu__line {
-		top: 3em;
-	}
-
-	.menu--alonso .menu__item:nth-child(1).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-
-	.menu--alonso .menu__item:nth-child(2).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 3em, 0);
-		transform: translate3d(0, 3em, 0);
-	}
-
-	.menu--alonso .menu__item:nth-child(3).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 6em, 0);
-		transform: translate3d(0, 6em, 0);
-	}
-
-	.menu--alonso .menu__item:nth-child(4).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 9em, 0);
-		transform: translate3d(0, 9em, 0);
-	}
-
-	.menu--alonso .menu__item:nth-child(5).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 12em, 0);
-		transform: translate3d(0, 12em, 0);
-	}
+  color: #888;
+  padding: 20px 0;
+  background: transparent;
 }
 
 
+.tabs a:hover,
+.tabs a.active {
+    border-bottom: 4px solid #888;
+      font-weight: bold;
+
+
+}
+
+.tabgroup div {
+  padding: 30px;
+ 
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Test tab diff css*/
+
+.tabs2 li {
+  float: left;
+  width: 25%;
+}
+
+
+.tabs a.active2 {
+    background-color:white;
+    font-weight: bold;
+
+
+}
+.tabs2 a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #888;
+  padding: 20px 0;
+  background: transparent;
+}
