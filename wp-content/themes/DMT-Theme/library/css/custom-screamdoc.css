@@ -83,8 +83,6 @@ p.scream_wide_box:hover{
     font-size:130%;
 
 }
-
-}
 :-moz-placeholder { /* Firefox 18- */
   color: black;
     font-size:130%;
@@ -136,9 +134,9 @@ p.scream_wide_box:hover{
     -moz-box-shadow: 0 5px 5px -5px  grey;
     -webkit-box-shadow:0 5px 5px -5px  grey;
     box-shadow:         0 5px 5px -5px  grey;
-
 }
 
+    /*Code from http://www.w3schools.com/howto/howto_css_modals.asp*/
 .popupPage{
     text-align:left;
     margin:auto;
@@ -152,8 +150,6 @@ p.scream_wide_box:hover{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-
 /*For some reason, background won't turn white.  However, could make the background from the wrapper white..
 EDIT: DID THE ABOVE.*/
 .popup-content{
@@ -164,16 +160,120 @@ EDIT: DID THE ABOVE.*/
     z-index: 1;
 }
 
+/* ==========================================================================
+   SVG ICONS AND IMAGES
+   ========================================================================== */
+#member_icon{
+    height: 25px;
+}
+
+.location_icon{
+    height: 30px;
+}
+
+#profilePic{
+    border:none;
+}
+
+.icon{
+    width:1.2em;
+    height:1.2em;
+    margin-right:.5em;
+    margin-left:2em; 
+    vertical-align:text-bottom;
 
 }
+
+
+    /* ==========================================================================
+   PLACEHOLDERS
+   ========================================================================== */
+
+::-webkit-input-placeholder {
+   color: #66afad;
 }
 
+:-moz-placeholder { /* Firefox 18- */
+   color: #66afad;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #66afad;  
+}
+
+:-ms-input-placeholder {  
+   color: #66afad;  
+}
 .close:hover,
 .close:focus {
     text-decoration: none;
     cursor: pointer;
 }
+/* ==========================================================================
+   TEXT , BORDERS & BLOCKS
+   ========================================================================== */
+
+textarea:focus, input:focus{
+    outline: none;
 }
+*:focus {
+    outline: none;
+}
+.readOnly{
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 6em;
+}
+.containerBox{
+    background-color:white;
+    border:1px solid black;
+    width: 250px;
+}
+.oneLineBorder{
+    background-color:transparent;
+    border:none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+.scream_textarea_border{
+    background-color: transparent;
+    outline: 1px solid grey;
+    color:black;
+}
+.scream_textarea_border:focus{ 
+    background-color: transparent;
+    outline: 1px solid grey;
+    color:black;
+}
+#projectHeader{
+    background-color: #ececec;
+    -moz-box-shadow: 1px 1px 3px 2px #d3d3d3;
+    -webkit-box-shadow: 1px 1px 3px 2px #d3d3d3;
+    box-shadow:         1px 1px 3px 2px #d3d3d3;
+}
+
+#WIP
+{
+    position:relative;
+    bottom:-80px;
+    padding-left: 40px;
+}
+
+
+/* ==========================================================================
+   SVG ICONS AND IMAGES
+   ========================================================================== */
+#member_icon{
+    height: 25px;
+}
+
+.location_icon{
+    height: 30px;
+}
+
+#profilePic{
+    border:none;
 }
 
 /* ==========================================================================
@@ -184,9 +284,25 @@ EDIT: DID THE ABOVE.*/
     color: black;
     border:2px solid black;
     text-align:center;
+    width:250px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.next_btn {
+    width: 4em;
+    position: center;
+    font-size: 110%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #EDC13E;
+    width: 23em;
+    height: 6em ;
+    margin-top: 3em;
+    line-height: 600%;
+}
+.next_btn:hover {
+    box-shadow: 1px 1px 3px 2px #ababab;
 }
 .scream_btn_blue{
     background-color: transparent;
@@ -218,6 +334,7 @@ EDIT: DID THE ABOVE.*/
     box-shadow: 0 0 10px grey;
     -moz-box-shadow: 0 0 10px grey;
 }
+
 /* ==========================================================================
    PAGE + SIDEBAR DIVISION 
    ========================================================================== */
@@ -242,6 +359,7 @@ EDIT: DID THE ABOVE.*/
     padding:0;
 }
 
+
 #location{
     display:inline-block;
     vertical-align:middle;
@@ -258,43 +376,181 @@ EDIT: DID THE ABOVE.*/
     width:50%;
     margin-left: 350px;
 }
+/*==========================================================================
+  Start Up Bar
+ ==========================================================================*/
+ .startUpBar {
+    align-content: left;
+  position: absolute;
+  float:left;
+  background-color: #DCEDED;
+  width:15%;
+  height: 100%;
+ }
+ .startUpTitle {
+    align: center;  
+    height:auto;
+    padding-top:5em;
+    margin-left: 2em; 
+    font-size: 120%;
+    width: 70%;
+    border-bottom: solid black 1px;
+
+ }
+ .startUpItem {
+    align: center;
+    height:10%;
+    padding-top: 2em;
+    padding-bottom: 3em; 
+    margin-left: 2em; 
+
+ }
+
+ /*==========================================================================
+    Startup Content
+  ==========================================================================*/
+.startUpContainer {
+    padding-top: 5em;
+    margin-left: 25%;
+    width: 65%;
+    height: auto;
+    background-color: white;
 }
+.startUpHeader{
+    text-align: left;
+    font-kerning: all;
+    font-size: 180%
 
 }
+.startUpSubHeader{
+    font-weight: lighter;
+    color: #7D7D7D;
+    font-style: italic;
+    margin-top: 1em;
+    width:50%;
+    font-size: 110%;
+
 
 }
+.lineInput{
+    margin-top: 1em;
+    width:30%;
+    border-bottom: black 2px ;
+    font-size: 110%;
+      display: flex;
+    justify-content: space-between;
+}
+
+.adaddedUser{
+    color:black;
+    width:50%;
+    border: solid black 2px;
+}
+
+.textInput{
+
+}
+.style-4 input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+.style-4 input[type="text"]:focus,
+.style-4 input[type="text"].focus {
+  border-bottom: solid 2px #969696;
 }
 
 .location_icon{
     height: 30px;
 }
-
 #profilePic{
     border:none;
 }
-
 #sprint_sum_icon{
     height:35px;
     width: 40px;
     color:grey;
-}
+    }
 
 #tabIcon{
     height:16px;
 }
 
-#lightBulb
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #85C3C1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #85C3C1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #85C3C1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #85C3C1;
+}
+
+/* ==========================================================================
+   SVG ICONS AND IMAGES
+   ========================================================================== */
+#member_icon{
+    height: 25px;
+/*
+
+#scream_oneline {
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline:none;
+}
+
+#scream_oneline:focus {
+    background-color: transparent;
+
+}
+#project_goal
 {
-    vertical-align: middle;
+    outline:none;
+    background-color: transparent;
+    width: 500px;
     
 }
 
+#project_goal:focus
+{
+    background-color: transparent;
+    outline:none;
+}
+
+#readOnly
+{
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
+}
+#container_proj
+{
+    background-color:white;
+    border:1px solid black;
+    width: 250px;
+}
+
+#project_btn{
+    background-color: transparent;
+    color: black;
+    border:2px solid black;
+    text-align:center;
+    width:250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+*/
 #insight_icon{
     height:30px;
     width: 20px;
     color:grey;
-}
-
+    }
 
 /* ==========================================================================
    TABS
@@ -302,9 +558,11 @@ EDIT: DID THE ABOVE.*/
 
 .wrapper {
   margin: 30px auto;
+  width: 50%;
   color: #555;
   font-size: 14px;
   line-height: 24px;
+  margin-left: 350px;
 }
 h1 {
   font-size: 20px;
@@ -346,4 +604,16 @@ h1 + p {
   display: table;
   clear: both;
 }
+/* */
+.boldTitle {
+    font-size: 200%;
+    line-height: 1.2em;
+    font-weight: 900%;
+    margin-top: 4%;
+    width: 90%;
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-top: 2%;
+    color: #E6706A;
+    font-weight: 900;
 }
