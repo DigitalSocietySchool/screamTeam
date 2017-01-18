@@ -11,7 +11,21 @@
 
     <div id= "main-content"><br><br>
   
+        <!-- POP UP PAGE REQUEST-->        
+    <div class = "popupPage" id = "request">
+        <div class = "popup-content">
+            
+                <div style = "padding-left:2em; height:280px; padding-top:10px; margin-top:25%; padding-right:2em;">
 
+                  <!-- Insights --> 
+                  <p style = "font-size:1em;"><strong>THANK YOU FOR SENDING A REQUEST TO THE TEAM</strong></p>
+                  <textarea id = "requestMsg" class = "scream_textarea_border" size = 50   placeholder = "Add a personal message"></textarea>
+                  <button type="button" class = "scream_btn_orange" style = " float:right; width:20%;"onclick = "hide('request')">Done</button>
+
+       
+                </div>
+        </div>
+    </div><!-- END POP UP PAGE REQUEST--> 
 <!-- Contains Title, picture-->
        
         <div id = "projectHeader">
@@ -126,7 +140,7 @@
       </div>
       <div id="tab9">
         <p>There if no information about the target user from SCREAM! team yet...</p>
-          <button type="button" class = "scream_btn_orange">Send the team a request for more information</button>
+          <button type="button" class = "scream_btn_orange" id = "rqBtn">Send the team a request for more information</button>
        
       </div>
     </section>
@@ -162,7 +176,6 @@
         }
         
         
-        
     </style>
         
 <!-- Script for the tab functionality -->
@@ -182,4 +195,23 @@
 
     })
     </script>
+       
+        <!--Script for the popup functionality -->
+        <script>
+          
+        var requestMsg = document.getElementById("requestMsg");
+        var rqBtn = document.getElementById("rqBtn");
+        var request = document.getElementById("request");
+            
+        rqBtn.onclick = function() {
+            request.style.display= "block";
+        }
+        
+         //Function for hiding the popup
+        function hide(popup){
+            document.getElementById(popup).style.display="none";
+            requestMsg.value = "";
+        }
+        
+        </script>
 </div> 
