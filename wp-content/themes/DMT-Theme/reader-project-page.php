@@ -36,15 +36,23 @@
         
         <!-- List of team members -->
         <div class = "oneLineBorder"> <p style="color:grey;">THE TEAM</p></div>
-  
-        <li><img id = "member_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/man.svg"/><em> <strong>Naoya Nishiyama</strong><br>naoya@gmail.com</em></li>
+    <!-- NOTE: IMAGES FOR THE MEMBERS ARE FROM A TEMPORARILY WEBSITE AND WILL EXPIRE AFTER A WEEK -->
+        <li><img id = "member_icon" src = "http://cutmypic.com/uploads/title897983179.png"/> <p style = "display:inline-block;
+            vertical-align:middle;"><em> <strong>Naoya Nishiyama</strong><br>naoya@gmail.com</em></p></li>
         
-        <li><img id = "member_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/man.svg"/><em><strong>Lisa The</strong><br>lisa@gmail.com</em></li>
+        <li style = "vertical-align:top;"><img id = "member_icon" src = "http://cutmypic.com/uploads/title124330475.png"/><p style = "display:inline-block;
+            vertical-align:middle;"><em><strong>Lisa The</strong><br>lisa@gmail.com</em></p></li>
         
-        <li><img id = "member_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/man.svg"/><em><strong>Abdo Hassan</strong><br>abdo@gmail.com</em></li>
-
+        <li><img id = "member_icon" src = "http://cutmypic.com/uploads/title164424667.png"/><p style = "display:inline-block;
+            vertical-align:middle;"><em><strong>Abdo Hassan</strong><br>abdo@gmail.com</em></p></li>
         
-        <li><img id = "member_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/man.svg"/><em><strong>Inge van Ee</strong><br>inge@gmail.com</em></li>
+        <li><img id = "member_icon" src = "http://cutmypic.com/uploads/title542073627.png"/><p style = "display:inline-block;
+            vertical-align:middle;"><em><strong>Inge van Ee</strong><br>inge@gmail.com</em></p></li>
+        
+        <li><img id = "member_icon" src = "http://cutmypic.com/uploads/title417163540.png"/><p style = "display:inline-block;
+            vertical-align:middle;"><em><strong>Gal Agmon</strong><br>gal@gmail.com</em></p></li>
+        
+        
    
         
         <!-- List of companies and locations -->
@@ -143,6 +151,14 @@
         
       input[type="text"].scream_oneline {
             border-bottom: none;
+        }
+        
+        #member_icon{
+            height: 60px;
+            width: 60px;
+            display:inline-block;
+            vertical-align:middle;
+            margin-right: 10px;
         }
         
         
