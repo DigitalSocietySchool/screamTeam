@@ -1,10 +1,23 @@
 <?php
 
-	global $wp_session;
-	$wp_session['searching'] = false;
+  global $wp_session;
+  $wp_session['searching'] = false;
 /*
  Template Name: Sprint 1  Page
 */
+
+ //TODO: Code refactpring
+ //TODO: 
+
+ //TURN INTO OPEN SOURCE PROJECT (send remote proceedure calls when when publishing to platform) system generates a file representation for them
+
+
+ //semi open source: use remote procedure call 
+
+
+ //ToDO: retrieve user details, retrieve projectt,
+ //toDO
+
 ?>
 
 <?php get_header(); ?>
@@ -475,8 +488,55 @@
      </div>
         <br>
              
+
+
+
+
+<!-- REAL TABS -->
+<div class="TabsWrapper">
+  <li class="tabLiteral" id="tab1"> THE KEY INSIGHTS
+  </li>
+  <li class="tabLiteral" id="tab2"> PREVIOUS STEPS
+  </li>
+  <li class="tabLiteral" id="tab3" style="margin-right: 34%;"> NEXT STEP
+  </li>
+
+  <img id="icon1" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Link_sprint.svg" data-pin-nopin="true">
+    <img id="icon2" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Edit_sprint.svg" data-pin-nopin="true">
+  <img id="icon3" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Image_sprint.svg" data-pin-nopin="true"> 
+</div>
+
+
+<!-- TAB CONTENT -->
+<!-- tab1: key inisght area -->
+<div id="tabContent1" class="tabBlock">
+  
+  <div class="keyInsightContainer">
+    <div class="keyInsightItem" id="key1">
+        <img class="icon"  style="position:relative;float:right;"  src="http://localhost/wp-content/themes/DMT-Theme/library/images/KeyInsight_new.svg"/>
+
+    The chatbot should focus on ‘follow-up’, ‘guidance’ and ‘motivation’. The behavior of the chatbot should not be human like and it should be easy to communicate with it.
+
+      <span class="insightEvents"> 
+        <div style="font-weight:bolder">EVENTS</div>
+        <div>Literature Review -Method <br> Flow Chart -method</div>
+      </span>
+</div>  
+      <div class="keyInsightItem" id="key2">The chatbot is not the solution for our problem.</div>
+      <div class="keyInsightItem" id="key3">The occurrence of design waste will not be solved by a chatbot, but could be solved by designing a better way for users to document their process. 
+</div>   
+  </div>
+
+</div>
+
+
+<div id="tabContent2" class="tabBlock" style="display:none;">
+            <p>This is the first sprint, therefore there are no previous steps.</p>
+</div>
+<div id="tabContent3" class="tabBlock" style="display:none;"><p>In the second sprint we investigate more thoroughly who the actual user of Scream is. Besides that, how do these users document their process (if, how, why, when)? Sharing is an important part of preventing design waste as well. Therefore we need to find out how and if we can motivate teams to share their process with the world. </p></div>
+
 <!-- Tabs -->   
-    <div class="wrapper">
+<!--     <div class="TabsWrapper">
     <ul class="tabs clearfix" data-tabgroup="second-tab-group">
       <li><a href="#tab6" class="active">THE KEY INSIGHTS</a></li>
       <li><a href="#tab7">PREVIOUS STEPS</a></li>
@@ -488,7 +548,7 @@
     </ul>
        
 <!-- Tab text here (inside)-->
-    <section id="second-tab-group" class="tabgroup">
+    <section id="second-tab-group" class="tabgroup" style="display:none">
         <!--Key insights -->
       <div id="tab6">
         <div id = "keyInsight1">
@@ -553,6 +613,46 @@
     })
     </script>
     
+
+    <script type="text/javascript">
+      
+
+      var tab1 =document.getElementById("tab1");
+      var tab2 =document.getElementById("tab2");
+      var tab3 =document.getElementById("tab3");
+    
+      //on click functions for tabs
+      tab1.onclick=function(){
+        clearTabContent();
+        activate("tabContent1");
+      }
+
+      tab2.onclick=function(){
+                clearTabContent();
+
+        activate("tabContent2");
+
+      }
+      tab3.onclick=function(){
+        clearTabContent();
+        activate("tabContent3");
+      }
+
+
+    //display tab which is passed as an argument
+    function activate(tabID){
+            document.getElementById(tabID).style.display="block";
+        }
+    //clear all tab containers from their contents
+    function clearTabContent(){
+      document.getElementById("tabContent1").style.display="none";
+      document.getElementById("tabContent2").style.display="none";
+      document.getElementById("tabContent3").style.display="none";
+
+
+    }
+
+    </script>
         <!-- Script for other tab  (popup)-->
     <script type="text/javascript">
         $('.tabgroup > div').hide();
@@ -585,13 +685,13 @@
         var closeBtn = document.getElementsByClassName("close")[0];
         
         //Shows key insight/MVP when pressed 
-        keyInsight1.onclick = function() {
+        key1.onclick = function() {
             popup1.style.display= "block";
         }
-         keyInsight2.onclick = function() {
+         key2.onclick = function() {
             popup2.style.display= "block";
         }
-          keyInsight3.onclick = function() {
+          key3.onclick = function() {
             popup3.style.display= "block";
         }
           
