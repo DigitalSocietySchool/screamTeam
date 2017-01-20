@@ -66,9 +66,6 @@
         <li><img id = "member_icon" src = "http://cutmypic.com/uploads/title417163540.png"/><p style = "display:inline-block;
             vertical-align:middle;"><em><strong>Gal Agmon</strong><br>gal@gmail.com</em></p></li>
         
-        
-   
-        
         <!-- List of companies and locations -->
          <div class = "oneLineBorder"><p style="color:grey;">COMPANIES/ORGANIZATIONS</p></div>
         <p>MediaLab, HvA Amsterdam </p>
@@ -146,7 +143,7 @@
     </section>
     </div>
 
-        
+  </div>       
 <!-- Custom css changes for this page -->
     <style>
 
@@ -175,6 +172,10 @@
             margin-right: 10px;
         }
         
+        #main-content{
+            background-color: white;
+            background-image: "none";
+        }
         
     </style>
         
@@ -214,4 +215,3 @@
         }
         
         </script>
-</div> 

@@ -4,6 +4,7 @@
 	$wp_session['searching'] = false;
 /*
  Template Name: Sprint 2  Page
+ TODO: Change the tabs functionality to the working one ( See technical documentation)
 */
 ?>
 
@@ -526,49 +527,54 @@
 </div>
 <br>
              
-<!-- Tabs -->   
-    <div class="wrapper">
-    <ul class="tabs clearfix" data-tabgroup="second-tab-group">
-      <li><a href="#tab6" class="active">THE KEY INSIGHTS</a></li>
-      <li><a href="#tab7">PREVIOUS STEPS</a></li>
-      <li><a href="#tab8">NEXT STEPS</a></li>
+
+<!-- REAL TABS -->
+<div class="TabsWrapper">
+  <li class="tabLiteral" id="tab1"> THE KEY INSIGHTS
+  </li>
+  <li class="tabLiteral" id="tab2"> PREVIOUS STEPS
+  </li>
+  <li class="tabLiteral" id="tab3" style="margin-right: 34%;"> NEXT STEP
+  </li>
+
+  <img id="icon1" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Link_sprint.svg" data-pin-nopin="true">
+    <img id="icon2" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Edit_sprint.svg" data-pin-nopin="true">
+  <img id="icon3" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Image_sprint.svg" data-pin-nopin="true"> 
+</div>
+
+        <!-- TAB CONTENT -->
+<!-- tab1: key inisght area -->
+<div id="tabContent1" class="tabBlock">
+  
+  <div class="keyInsightContainer">
+    <div class="keyInsightItem" id="key1">
+        <img class="icon"  style="position:relative;float:right;"  src="http://localhost/wp-content/themes/DMT-Theme/library/images/KeyInsight_new.svg"/>
+        People have personal preferences when it comes to documenting.
+      <span class="insightEvents"> 
+        <div style="font-weight:bolder">EVENTS</div>
+        <div>Literature Review -Method <br> Flow Chart -method</div>
+      </span>
+      </div>  
+      <div class="keyInsightItem" id="key2">People already document consistently, but not for the purpose of sharing (with the team and/or the world). This makes the documentation only understandable for themselves.</div>
+      <div class="keyInsightItem" id="key3">It is hard to classify behavior, especially with teams that are multidisciplinary and international. 
+      </div>
+     <div class="keyInsightItem" id="key4"> Quantifying qualitative data can be really hard, because it is subjected to interpretation. 
+      </div> 
+  </div>
+
+</div>
+
+<!-- Previous steps -->
+<div id="tabContent2" class="tabBlock" style="display:none;">
+  <p>The chatbot was not the solution for our problem, therefore we decided to focus on the way Multidisciplinary Design Teams document their process.</p>
+</div>
         
-      <li style = " width:5%;"><a href="#tab9"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Link_sprint.svg"/>  </a></li>
-      <li style = " width:5%;"><a href="#tab10"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Edit_sprint.svg"/> </a></li>
-      <li style = " width:5%;"><a href="#tab11"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Image_sprint.svg"/> </a></li>
-    </ul>
-       
-<!-- Tab text here (inside)-->
-    <section id="second-tab-group" class="tabgroup">
-        <!-- Key insights -->
-      <div id="tab6">
-        <div id = "keyInsight1">
-            People have personal preferences when it comes to documenting.
-        </div>
-          
-        <div id = "keyInsight2">
-           People already document consistently, but not for the purpose of sharing (with the team and/or the world). This makes the documentation only understandable for themselves.
-        </div>
-          
-        <div id = "keyInsight3">
-            It is hard to classify behavior, especially with teams that are multidisciplinary and international. 
-        </div>
-          
-        <div id = "keyInsight4">
-            Quantifying qualitative data can be really hard, because it is subjected to interpretation. 
-        </div>
-      </div>
-        <!-- Previous steps -->
-      <div id="tab7">
-          <p>The chatbot was not the solution for our problem, therefore we decided to focus on the way Multidisciplinary Design Teams document their process.</p>
-      </div>
-        <!-- Next steps -->
-      <div id="tab8">
-         <p>1.We will focus on “how do people look for and read documentation?”. <br>
-             2.We will start on making and testing a specific part of our documentation tool. </p>
-      </div>
-    </section>
+    <!--Next steps-->
+    <div id="tabContent3" class="tabBlock" style="display:none;">
+        <p>1.We will focus on “how do people look for and read documentation?”. <br>
+        <p> 2.We will start on making and testing a specific part of our documentation tool. </p>
     </div>
+</div>
 
 
         
@@ -589,58 +595,62 @@
         }
 
     </style>
-        
-<!-- Script for the tab functionality [Error: 2 tabs in page ruins other one..] -->
-    <script type="text/javascript">
-        $('.tabgroup > div').hide();
-        $('.tabgroup > div:first-of-type').show();
-        $('.tabs a').click(function(e){
-          e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active');
-            $this.addClass('active');
-            $(tabgroup).children('div').hide();
-            $(target).show();
+ <!-- Script for tab functionality -->       
+<script type="text/javascript">
+      
 
-    })
-    </script>
+      var tab1 =document.getElementById("tab1");
+      var tab2 =document.getElementById("tab2");
+      var tab3 =document.getElementById("tab3");
     
-        <!-- Script for other tab  (popup)-->
-    <script type="text/javascript">
-        $('.tabgroup > div').hide();
-        $('.tabgroup > div:first-of-type').show();
-        $('.tabs2 a').click(function(e){
-          e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs2').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active2');
-            $this.addClass('active2');
-            $(tabgroup).children('div').hide();
-            $(target).show();
+      //on click functions for tabs
+      tab1.onclick=function(){
+        clearTabContent();
+        activate("tabContent1");
+      }
 
-    })
-    </script>
+      tab2.onclick=function(){
+                clearTabContent();
+
+        activate("tabContent2");
+
+      }
+      tab3.onclick=function(){
+        clearTabContent();
+        activate("tabContent3");
+      }
+
+
+    //display tab which is passed as an argument
+    function activate(tabID){
+            document.getElementById(tabID).style.display="block";
+        }
+    //clear all tab containers from their contents
+    function clearTabContent(){
+      document.getElementById("tabContent1").style.display="none";
+      document.getElementById("tabContent2").style.display="none";
+      document.getElementById("tabContent3").style.display="none";
+    }
+
+</script>
 
 
         
 <!--Script for the popup functionality-->
-        <script>
+    <script>
+            
+        //Retrieve the popup containers
         var popup1 = document.getElementById("popupPage1");
         var popup2 = document.getElementById("popupPage2");
         var popup3 = document.getElementById("popupPage3");
         var popup4 = document.getElementById("popupPage4");
         var MVP = document.getElementById("MVP");
-            
-        var keyInsight1 = document.getElementById("keyInsight1");
-        var keyInsight2 = document.getElementById("keyInsight2");
-        var keyInsight3 = document.getElementById("keyInsight3");
-        var keyInsight4 = document.getElementById("keyInsight4");
-        var closeBtn = document.getElementsByClassName("close")[0];
+         
+        //Retrieve the keyinsight boxes/buttons
+        var keyInsight1 = document.getElementById("key1");
+        var keyInsight2 = document.getElementById("key2");
+        var keyInsight3 = document.getElementById("key3");
+        var keyInsight4 = document.getElementById("key4");
         var mvpBtn = document.getElementById("mvpBtn");
         
         //Shows key insight when pressed 
@@ -665,5 +675,4 @@
             document.getElementById(popup).style.display="none";
         }
         
-        </script>
-</div> <!-- End main content -->
+    </script>
