@@ -5,16 +5,10 @@
 /*
  Template Name: Sprint 1  Page
 */
-
+ //TODO: Change the tabs functionality to the working one ( See technical documentation)
  //TODO: Code refactpring
- //TODO: 
-
  //TURN INTO OPEN SOURCE PROJECT (send remote proceedure calls when when publishing to platform) system generates a file representation for them
-
-
  //semi open source: use remote procedure call 
-
-
  //ToDO: retrieve user details, retrieve projectt,
  //toDO
 
@@ -35,6 +29,8 @@
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/mvp.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "> <i><strong>The minimal viable product is</strong> a clickable prototype that shows how a chatbot could function in the SCREAM! app and in Slack</i></h2>
            </div>
+            
+            <!-- Rest of the popup content --> 
                 <div style = "padding-left:2em;">
                 <p style = "color:grey; font-size:0.8em;"><i> Method - Clickable prototype</i></p>
 
@@ -63,7 +59,7 @@
                   
                   <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                       <p style = "color:black;"><i>https://xd.adobe.com/view/7a58d2f8-b8de-4158-9066-0450d17c4b0d/</i></p>
-                         <p>PROTOTYPE - Chatbot integrated in the app </p>
+                      <p>PROTOTYPE - Chatbot integrated in the app </p>
                   </div> <br>
                 </div>
         </div>
@@ -288,13 +284,6 @@
                   <!-- What happened --> 
                   <p style = "font-size:1em;"><strong>WHAT HAPPENED IN THIS EVENT?</strong></p>
                   <p>The #GlobalGoalsJam is a two day event consisting of short design sprints. Creative teams, with designers, developers and Jammers from the local community will work together using a tailored toolkit. The Scream application was tested for the first time at this event.We thought that the Global Goals Jam would be the perfect moment for us to get insights about how people react to a chatbot. That is why we prepared a chatbot simulation. We added our chatbot simulation to the Slack-channel of two Global Goals teams.</p>
-
-                  <!-- Links/ photos/files 
-                  <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
-                      <p style = "color:black;"><i>https://drive.google.com/open?id=0B1S0sQLj0CQJMVNZNjBlWE5UUVk</i></p>
-                      <p>FLOWCHART SCREAM APP- We reverse engineered the flow of the SCREAM app</p>
-                  </div> <br>-->
                 
             </div>
             <div id = "tab18">
@@ -342,7 +331,6 @@
                     <li style=" position:relative; display:inline-block; padding-left:60px;"><img style = "position:absolute; bottom:2%; left:1px;" id = "insight_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/bookmark.svg"/>
                     Through the Stakeholders map method we found out that one of the most important stakeholders is the end user. </li>
                     <br><br>
-
 
                   <!-- What happened --> 
                   <p style = "font-size:1em;"><strong>WHAT HAPPENED IN THIS EVENT?</strong></p>
@@ -435,22 +423,20 @@
         </section>
         </div>
     </div>
-</div> <!-- END OF POP UP PAGE 3 -->        
-        
-        
-       <div class = "centeredContent" style = "width:50%;">
-
-
-                  <!-- Normal content of the page -->  
+</div> <!-- END OF POP UP PAGE 3 -->           
+     
+       <!-- Normal content of the page -->  
+       <div class = "centeredContent" style = "width:50%;">    
             <div id = "sprintHeader" >
-
                 <div id="sprintLeft" style = "display:inline-block; vertical-align:top;">
                     <p>SCREAM! TOOL</p>
+                    
                     <div  class = "tooltip">
                         <!--Sprint menu-->
                         <div style=" color:#66afad; border-bottom:solid; width:350px; "> 
                         <span style ="color:#66afad;">SPRINT 1</span> <span style ="color:#66afad; float:right;">▼</span>
                         </div>
+                        
                         <!-- Sprint menu text/options
                         Code from: http://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_bottom-->
                         <span class="tooltiptext">
@@ -459,7 +445,6 @@
                             <span style = "color:grey;"> SPRINT 4 </span> <br>
                             <span style = "color:grey;"> SPRINT 5 </span> <br>
                             <span style = "color:grey;"> SPRINT 6 </span> <br>
-
                         </span>
                     </div> 
                     <span style ="color:grey; font-size:0.8em;"> <br>Chatbot, DesignFeedback, UX, AI</span>   
@@ -477,22 +462,19 @@
                
                <li style=" position:relative; display:inline-block; padding-left:60px;"><img style = "position:absolute; top:30%; left:1px;" id = "sprint_sum_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/aim.svg"/>
                <strong>The aim for this sprint is to</strong>  identify and validate a set of functional requirements for the chatbot, and translate the findings into a clickable prototype.  </li>
+               
                <br><br><br>
                <li style=" position:relative; display:inline-block; padding-left:60px;" id = "mvpBtn"><img style = "position:absolute; top:30%; left:1px;" id = "sprint_sum_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/mvp.svg"/>
                    <strong>The minimal viable product is</strong> a clickable prototype that shows how a chatbot could function in the SCREAM! app and in Slack</li>
+               
                <br><br><br>
                <li style=" position:relative; display:inline-block; padding-left:60px;"><img style = "position:absolute; top:30%; left:1px;" id = "sprint_sum_icon" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Conclusion_1.svg"/>
                    <strong>The conclusion for this sprint is</strong> the chatbot was not the solution for our problem, therefore we decided to focus on the way Multidisplinary Design Teams document their process</li>
                   
             </div> 
-     </div>
-        <br>
-             
-
-
-
-
-<!-- REAL TABS -->
+     </div><br>
+        
+<!-- TABS -->
 <div class="TabsWrapper">
   <li class="tabLiteral" id="tab1"> THE KEY INSIGHTS
   </li>
@@ -521,100 +503,43 @@
         <div style="font-weight:bolder">EVENTS</div>
         <div>Literature Review -Method <br> Flow Chart -method</div>
       </span>
-</div>  
+        
+    </div>  
       <div class="keyInsightItem" id="key2">The chatbot is not the solution for our problem.</div>
       <div class="keyInsightItem" id="key3">The occurrence of design waste will not be solved by a chatbot, but could be solved by designing a better way for users to document their process. 
-</div>   
+      </div>   
   </div>
 
 </div>
 
-
 <div id="tabContent2" class="tabBlock" style="display:none;">
-            <p>This is the first sprint, therefore there are no previous steps.</p>
+    <p>This is the first sprint, therefore there are no previous steps.</p>
 </div>
-<div id="tabContent3" class="tabBlock" style="display:none;"><p>In the second sprint we investigate more thoroughly who the actual user of Scream is. Besides that, how do these users document their process (if, how, why, when)? Sharing is an important part of preventing design waste as well. Therefore we need to find out how and if we can motivate teams to share their process with the world. </p></div>
-
-<!-- Tabs -->   
-<!--     <div class="TabsWrapper">
-    <ul class="tabs clearfix" data-tabgroup="second-tab-group">
-      <li><a href="#tab6" class="active">THE KEY INSIGHTS</a></li>
-      <li><a href="#tab7">PREVIOUS STEPS</a></li>
-      <li><a href="#tab8">NEXT STEPS</a></li>
-        
-      <li style = " width:5%;"><a href="#tab9"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Link_sprint.svg"/>  </a></li>
-      <li style = " width:5%;"><a href="#tab10"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Edit_sprint.svg"/> </a></li>
-      <li style = " width:5%;"><a href="#tab11"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Image_sprint.svg"/> </a></li>
-    </ul>
-       
-<!-- Tab text here (inside)-->
-    <section id="second-tab-group" class="tabgroup" style="display:none">
-        <!--Key insights -->
-      <div id="tab6">
-        <div id = "keyInsight1">
-            The chatbot should focus on ‘follow-up’, ‘guidance’ and ‘motivation’. The behavior of the chatbot should not be human like and it should be easy to communicate with it. 
-        </div>
-          
-        <div id = "keyInsight2">
-          The chatbot is not the solution for our problem.
-        </div>
-          
-        <div id = "keyInsight3">
-          The occurrence of design waste will not be solved by a chatbot, but could be solved by designing a better way for users to document their process. 
-        </div>
-      </div>
-        <!-- Previous steps-->
-      <div id="tab7">
-          <p>This is the first sprint, therefore there are no previous steps.</p>
-      </div>
-        
-        <!-- Next steps -->
-      <div id="tab8">
-         <p>In the second sprint we investigate more thoroughly who the actual user of Scream is. Besides that, how do these users document their process (if, how, why, when)? Sharing is an important part of preventing design waste as well. Therefore we need to find out how and if we can motivate teams to share their process with the world. </p>
-      </div>
-    </section>
-    </div>
-</div> <!-- End main content -->
+<div id="tabContent3" class="tabBlock" style="display:none;">
+    <p>In the second sprint we investigate more thoroughly who the actual user of Scream is. Besides that, how do these users document their process (if, how, why, when)? Sharing is an important part of preventing design waste as well. Therefore we need to find out how and if we can motivate teams to share their process with the world. </p></div>
+</div>
 
         
 <!-- Custom css changes for this page -->
-    <style>
-        .wrapper{
-            float:left;
-            width:100%;
-            margin:0;
-        }
-          li {
-            list-style-type:none;
-        }
+<style>
+    .wrapper{
+        float:left;
+        width:100%;
+        margin:0;
+    }
+      li {
+        list-style-type:none;
+    }
+
+     a.active2 {
+    background-color:white;
+    font-weight: bold;
+    }
+
+</style>
         
-         a.active2 {
-        background-color:white;
-        font-weight: bold;
-        }
-
-    </style>
-        
-<!-- Script for the tab functionality [Error: 2 tabs in page ruins other one..] -->
-    <script type="text/javascript">
-        $('.tabgroup > div').hide();
-        $('.tabgroup > div:first-of-type').show();
-        $('.tabs a').click(function(e){
-          e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active');
-            $this.addClass('active');
-            $(tabgroup).children('div').hide();
-            $(target).show();
-
-    })
-    </script>
-    
-
-    <script type="text/javascript">
+<!-- Script for the tab functionality -->
+<script type="text/javascript">
       
 
       var tab1 =document.getElementById("tab1");
@@ -652,35 +577,20 @@
 
     }
 
-    </script>
-        <!-- Script for other tab  (popup)-->
-    <script type="text/javascript">
-        $('.tabgroup > div').hide();
-        $('.tabgroup > div:first-of-type').show();
-        $('.tabs2 a').click(function(e){
-          e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs2').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active2');
-            $this.addClass('active2');
-            $(tabgroup).children('div').hide();
-            $(target).show();
-
-    })
-    </script>
-        
+</script>
 <!--Script for the popup functionality-->
-        <script>
+    <script>
+        
+        //Retrieve the popup containers
         var popup1 = document.getElementById("popupPage1");
         var popup2 = document.getElementById("popupPage2");
         var popup3 = document.getElementById("popupPage3");
         var MVP = document.getElementById("MVP");
-            
-        var keyInsight1 = document.getElementById("keyInsight1");
-        var keyInsight2 = document.getElementById("keyInsight2");
-        var keyInisght3 = document.getElementById("keyInsight3");
+        
+        //Retrieve the keyinsight boxes/buttons
+        var keyInsight1 = document.getElementById("key1");
+        var keyInsight2 = document.getElementById("key2");
+        var keyInisght3 = document.getElementById("key3");
         var mvpBtn = document.getElementById("mvpBtn");
         var closeBtn = document.getElementsByClassName("close")[0];
         
@@ -703,4 +613,4 @@
         function hide(popup){
             document.getElementById(popup).style.display="none";
         }
-        </script>
+    </script>
