@@ -2,34 +2,33 @@
    INPUT FIELDS
    ========================================================================== */
 
+
 input[type="text"].scream_oneline, input[type="password"].scream_oneline {
     border: none;
     max-width: 60%;
     border-bottom: 2px solid rgba(191, 191, 191, 0.75);
-    background-color: transparent; 
-    outline:none;
-    margin-top: 3em;
+    background-color: transparent;
+    outline: none;
+    margin-top: 2em;
     letter-spacing: 0em;
-        padding-bottom: 1em;
-
-        font-size: 130%;
-
-
+    padding-bottom: 1em;
+    font-size: 130%;
+    padding-left: 0;
 }
-input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus,input[type="password"].scream_oneline:active,input[type="password"].scream_oneline:focus{
+input[type="text"].scream_oneline:active,input[type="text"].scream_oneline:focus{
     background-color: transparent !important;
 }
 
-/*input box*/
-input[type="text"].box_input {
-    background-color: white !important;
-    border: 2px gray;
-    height: auto;
-    width: 50%;
-    margin-top: 4%;
-    border: solid #e2e2e2;
-    border-width: 2px;
-    margin-bottom: 0;
+.scream_textarea{
+    outline:none;
+    background-color: transparent;
+    color:black;
+}
+
+.scream_textarea:focus{
+    background-color: transparent;
+    outline:none;
+     color:black;
 }
 
 .scream_textarea_border{
@@ -42,17 +41,7 @@ input[type="text"].box_input {
     outline: 1px solid grey;
     color:black;
 }
-.scream_textarea{
-    outline:none;
-    background-color: transparent;
-    width: 500px;
-    
-}
 
-.scream_textarea:focus{
-    background-color: transparent;
-    outline:none;
-}
 
 p.scream_wide_box{
     float:left;
@@ -68,28 +57,72 @@ p.scream_wide_box:hover{
     background-color: silver;
     outline:none;
 }
+/* ==========================================================================
+   TEXT , BORDERS & BLOCKS
+   ========================================================================== */
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: black;
-  font-size:130%;
+.readOnly{
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: black;
-    font-size:130%;
-
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: black;
-    font-size:130%;
-
+.containerBox{
+    background-color:white;
+    border:2px solid black;
+    width: 300px;
 }
 
+.oneLineBorder{
+    background-color:transparent;
+    border:none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
 }
+
+ .customFileUploadBlock{
+    display:inline-block;
+    cursor:pointer;
+    background-color:white;
+    width:400px;
+    height:200px;
+    position:relative;
+    bottom:-50px;
+    color:#66afad;
+}
+
+#projectHeader{
+    background-color: #ececec;
+    -moz-box-shadow: 1px 1px 3px 2px #d3d3d3;
+    -webkit-box-shadow: 1px 1px 3px 2px #d3d3d3;
+    box-shadow:         1px 1px 3px 2px #d3d3d3;
+}
+
+#WIP
+{
+    position:relative;
+    bottom:-80px;
+    padding-left: 40px;
+}
+/* ==========================================================================
+   PLACEHOLDERS
+   ========================================================================== */
+
+::-webkit-input-placeholder {
+   color: #66afad;
+}
+
 :-moz-placeholder { /* Firefox 18- */
-  color: black;
-    font-size:130%;
-
+   color: #66afad;  
 }
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #66afad;  
+}
+
+:-ms-input-placeholder {  
+   color: #66afad;  
+}
+
 
 /* ==========================================================================
    TOOLTIPS & POP UPS
@@ -139,6 +172,7 @@ p.scream_wide_box:hover{
 
 }
 
+/*Code from http://www.w3schools.com/howto/howto_css_modals.asp*/
 .popupPage{
     text-align:left;
     margin:auto;
@@ -164,8 +198,12 @@ EDIT: DID THE ABOVE.*/
     z-index: 1;
 }
 
+/* The Close Button */
+.close {
 
-}
+    float: right;
+    font-size: 50px;
+    margin:10px;
 }
 
 .close:hover,
@@ -173,21 +211,24 @@ EDIT: DID THE ABOVE.*/
     text-decoration: none;
     cursor: pointer;
 }
-}
-}
 
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
-.scream_btn{
+.scream_btn {
     background-color: transparent;
     color: black;
-    border:2px solid black;
-    text-align:center;
+    border: 1px solid #808080;
+    text-align: center;
+    width: 30%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.scream_btn:focus{
+    outline:none;
 }
+
 .scream_btn_blue{
     background-color: transparent;
     color: #66afad;
@@ -198,9 +239,10 @@ EDIT: DID THE ABOVE.*/
     padding-bottom: 20px;
 }
 .scream_btn_orange{
-    background-color: orange;
+    background-color: #EDC13E;
+;
     color: white;
-    border:2px solid orange;
+    border:2px solid #EDC13E;
     text-align:center;
     width:30%;
     padding-top: 20px;
@@ -212,6 +254,20 @@ EDIT: DID THE ABOVE.*/
    position:absolute;
    left:1px;
    background-color:orange;
+}
+.next_btn {
+    width: 4em;
+    position: center;
+    font-size: 150%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #EDC13E;
+    width: 16em;
+    height: 2,5em;
+    margin-top: 3em;
+    line-height: 250%;
+    font-family: "Montserrat", serif;
 }
 #mvpBtn:hover{
     -webkit-box-shadow: 0 0 10px grey;
@@ -235,6 +291,7 @@ EDIT: DID THE ABOVE.*/
     width:70%;
 
 }
+
 .centeredContent{
     margin:auto;
     text-align: center;
@@ -258,11 +315,113 @@ EDIT: DID THE ABOVE.*/
     width:50%;
     margin-left: 350px;
 }
+
+
+/*==========================================================================
+  Start Up Bar
+ ==========================================================================*/
+ .startUpBar {
+    align-content: left;
+  position: absolute;
+  float:left;
+  background-color: #DCEDED;
+  width:15%;
+  height: 100%;
+ }
+ .startUpTitle {
+    align: center;
+    height: auto;
+    padding-top: 5em;
+    margin-left: 1.8em;
+    font-size: 140%;
+    width: 70%;
+    padding-bottom: 2%;
+    border-bottom: solid black 1px;
+}
+.startUpItem {
+    align: center;
+    height: 10%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    margin-left: 2em;
+    font-size: 110%;
 }
 
+ /*==========================================================================
+    Startup Content
+  ==========================================================================*/
+.startUpContainer {
+    padding-top: 5em;
+    margin-left: 25%;
+    width: 65%;
+    height: auto;
+    background-color: white;
 }
+.startUpHeader{
+    text-align: left;
+    font-kerning: all;
+    font-size: 180%
 
 }
+.startUpSubHeader {
+    font-weight: lighter;
+    color: #808080;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2%;
+    width: 50%;
+    font-size: 125%;
+    font-family: georgia;
+}
+.lineInput{
+    margin-top: 1em;
+    width:30%;
+    border-bottom: black 2px ;
+    font-size: 110%;
+      display: flex;
+    justify-content: space-between;
+}
+
+.adaddedUser{
+    color:black;
+    width:50%;
+    border: solid black 2px;
+}
+
+.textInput{
+
+}
+.style-4 input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+.style-4 input[type="text"]:focus,
+.style-4 input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #85C3C1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #85C3C1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #85C3C1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #85C3C1;
+}
+
+/* ==========================================================================
+   SVG ICONS AND IMAGES
+   ========================================================================== */
+#member_icon{
+    height: 25px;
 }
 
 .location_icon{
@@ -277,6 +436,7 @@ EDIT: DID THE ABOVE.*/
     height:35px;
     width: 40px;
     color:grey;
+    
 }
 
 #tabIcon{
@@ -285,7 +445,10 @@ EDIT: DID THE ABOVE.*/
 
 #lightBulb
 {
+    height:80px;
     vertical-align: middle;
+    width:auto;
+    margin-left:2em;
     
 }
 
@@ -295,7 +458,21 @@ EDIT: DID THE ABOVE.*/
     color:grey;
 }
 
+.icon {
+    width: 2em;
+    height: 2em;
+    margin-right: .5em;
+    vertical-align: text-bottom;
 
+}
+.check{
+    width:1.2em;
+    height:1.2em;
+    margin-right:.5em;
+    margin-left:2em; 
+    vertical-align:text-bottom;
+
+}
 /* ==========================================================================
    TABS
    ========================================================================== */
@@ -330,6 +507,8 @@ h1 + p {
   padding: 20px 0;
   background: transparent;
 }
+
+
 .tabs a:hover,
 .tabs a.active {
     border-bottom: 4px solid #888;
@@ -337,6 +516,7 @@ h1 + p {
 
 
 }
+
 .tabgroup div {
   padding: 30px;
  
@@ -346,6 +526,41 @@ h1 + p {
   display: table;
   clear: both;
 }
+
+/*Test tab diff css*/
+
+.tabs2 li {
+  float: left;
+  width: 25%;
+}
+
+
+.tabs a.active2 {
+    background-color:white;
+    font-weight: bold;
+
+
+}
+.tabs2 a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #888;
+  padding: 20px 0;
+  background: transparent;
+}
+.boldTitle {
+    font-size: 209%;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin-top: 4%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-top: 2%;
+    color: #E6706A;
 }
 /* ========================================================================================
 TABS FOR REAL
@@ -437,4 +652,5 @@ Key insight flex boxes
     font-weight: bolder;
     font-size: italic;
 }
+
 
