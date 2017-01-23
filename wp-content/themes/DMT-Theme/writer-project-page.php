@@ -4,16 +4,17 @@
 	$wp_session['searching'] = false;
 /*
  Template Name: Writer Project Page
- * TODO: Two sidebars?
+ * TODO: Add progress bar
+   TODO: Retrieve the values which are already filled in from the startup phase in their fields
+   TODO: Enable editing and save the values
+   TODO: Make the checklist (WIP) work.( Check whether the fields have been filled in and add a checkmark if it is)
+   TODO: The code for saving the project photo has not been tested and might not work. 
 */
 ?>
 
 <?php get_header(); ?>
 
-    <div id= "main-content"><br><br>
-  
-
-        
+    <div id= "main-content"><br><br>        
         
 <!-- Contains Title, picture, timeline and work in progress. Source from image set to transparent to remove default border displayed in some browsers-->
        
@@ -73,9 +74,6 @@
             <textarea id = "project_goal" class = "scream_textarea" size = 50   placeholder = "Explain how you are planning to solve this project's design challenge." style = "font-style:italic;">find an alternative solution for dogwalkers in urban environments to encourage their hounds to urinate in a way that is less time consuming.
             </textarea>
         </div>
-
-    <!-- Project goal variabele-->
-
         
  <!-- Team Information -->       
     <div class = "team_info">
@@ -165,9 +163,9 @@
         
       input[type="text"].scream_oneline {
             border-bottom: none;
+            margin-right: 0px;
         }
-        
-        
+             
         
     </style>
         
@@ -223,26 +221,6 @@
             e.preventDefault();
 
         });
-
-        /*var upload = $("realFileUploadBtn"); 
-
-        upload.onchange = function(){test()};
-
-        function test()
-        {
-            alert('d');
-            alert( upload.get(0).files[0]);
-        }*/
-
-  /*  var projectImg;
-
-     document.getElementById('profilePic').src= window.URL.createObjectURL(this.files[0])
-
-    projectImg = document.getElementById("profilePic").src; 
-
-    if (projectImg !="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif" ) {
-        //projectImg = document.getElementById("testing").value;}
-        alert("b")}*/
     </script>
       </div> 
 

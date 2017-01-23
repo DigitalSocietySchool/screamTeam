@@ -4,6 +4,7 @@
 	$wp_session['searching'] = false;
 /*
  Template Name: Sprint 2  Page
+ TODO: Change the tabs functionality to the working one ( See technical documentation)
 */
 ?>
 
@@ -16,7 +17,7 @@
             
             <!-- Popup header (blue area)-->
            <div id = "popupHeader" style = "background-color:#c5e3e3">
-            <span class ="close">&times;</span>
+           <span class ="close" onclick = "hide('MVP')" >&times;</span>
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/mvp.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "> <i><strong>The minimal viable product is</strong> an infographic that maps the target users’ documentation process.</i></h2>
            </div>
@@ -47,14 +48,13 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                        <p style = "color:black;"><i>https://drive.google.com/open?id=0B2DcaGGKzkPxX19HOUpoeGZhNDA</i></p>
                       <p>THE INFOGRAPHIC - This is the whole presentation (with the infographic) that we had prepared for our product owners </p>
                  
                   </div>  <br><br>
                 </div>
         </div>
-    </div>
 </div> <!-- END POP UP PAGE MVP-->  
  <!--KEY INSIGHT 1 - POP UP PAGE-->        
     <div class = "popupPage" id = "popupPage1">
@@ -62,8 +62,8 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
-           <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+            <span class ="close" onclick = "hide('popupPage1')">&times;</span>
+           <p><i>SCREAM! Tool project // Sprint 2</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>People have personal preferences when it comes to documenting</i></h2>
            </div>
@@ -190,7 +190,7 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                 <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                        <p style = "color:black;"><i>https://drive.google.com/open?id=0B2DcaGGKzkPxX19HOUpoeGZhNDA</i></p>
                       <p>THE INFOGRAPHIC - This is the whole presentation (with the infographic) that we had prepared for our product owners </p>
                   </div>       
@@ -206,8 +206,8 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
-           <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+            <span class ="close" onclick = "hide('popupPage2')">&times;</span>
+           <p><i>SCREAM! Tool project // Sprint 2</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>People already document consistently, but not for the purpose of sharing (with the team and/or the world). This makes the documentation only understandable for themselves.</i></h2>
            </div>
@@ -299,8 +299,8 @@
             
             <!-- Popup header (yellow area)-->
            <div id = "popupHeader">
-            <span class ="close">&times;</span>
-           <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+             <span class ="close" onclick = "hide('popupPage3')">&times;</span>
+           <p><i>SCREAM! Tool project // Sprint 2</i></p> 
             <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
                <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>It is hard to classify behavior, especially with teams that are multidisciplinary and international. </i></h2>
            </div>
@@ -308,13 +308,13 @@
             <!-- popup tabs -->
             <div class="wrapper" style = "background-color:white; ">
             <ul class="tabs2 clearfix" data-tabgroup="second-tab-group" style="background-color:#f5da81; margin-top:0px;">
-              <li><a href="#tab20" class="active2">PERSONAS</a></li>
-              <li><a href="#tab21">PEER PITCHS</a></li>
+              <li><a href="#tab18" class="active2">PERSONAS</a></li>
+              <li><a href="#tab19">PEER PITCHS</a></li>
             </ul>
 
         <!-- Tab text here (inside)-->
             <section id="second-tab-group" class="tabgroup">
-                <div id="tab20">
+                <div id="tab18">
                 <p style = "color:grey; font-size:0.8em;"><i>Method - Persona</i></p>
 
                   <!-- Insights --> 
@@ -336,7 +336,7 @@
                     </div> <br>
                  </div>
                 
-                <div id = "tab21">
+                <div id = "tab19">
                     <p style = "color:grey; font-size:0.8em;"><i> Activity - Peer pitch</i></p>  
                 <!-- Insights --> 
                   <p style = "font-size:1em;"><strong>WHAT WERE THE INSIGHTS FROM THIS EVENT?</strong></p>
@@ -378,8 +378,8 @@
 
         <!-- Popup header (yellow area)-->
        <div id = "popupHeader">
-        <span class ="close">&times;</span>
-       <p><i>SCREAM! Tool project // Sprint 1</i></p> 
+         <span class ="close" onclick = "hide('popupPage4')">&times;</span>
+       <p><i>SCREAM! Tool project // Sprint 2</i></p> 
         <img id = "lightBulb" src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/KeyInsight_new.svg"/>
            <h2 style= "vertical-align: middle; width:80%; margin-bottom:1em; display:inline-block; margin-left:1em; "><i>Quantifying qualitative data can be really hard, because it is subjected to interpretation.</i></h2>
        </div>
@@ -466,7 +466,7 @@
 
                   <!-- Links/ photos/files -->
                   <p style = "font-size:1em;"><strong>LINKS/PHOTOS/FILES</strong></p>
-                  <div style = "border-left:solid; color:#66afad; padding:0px;">
+                  <div style = "border-left:solid; color:#66afad; padding:0px; padding-left:10px">
                        <p style = "color:black;"><i>https://drive.google.com/open?id=0B2DcaGGKzkPxX19HOUpoeGZhNDA</i></p>
                       <p>THE INFOGRAPHIC - This is the whole presentation (with the infographic) that we had prepared for our product owners </p>
                     </div>
@@ -493,7 +493,7 @@
                 <!-- Sprint menu text/options
                 Code from: http://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_bottom-->
                 <span class="tooltiptext">
-                    <span style = "color:grey;"> SPRINT 1 </span> <br>
+                    <span><a href="/index.php?page_id=1416" style = "text-decoration:none; color:grey;">SPRINT 1</a>  </span> <br>
                     <span style = "color:grey;"> SPRINT 3 </span> <br>
                     <span style = "color:grey;"> SPRINT 4 </span> <br>
                     <span style = "color:grey;"> SPRINT 5 </span> <br>
@@ -527,48 +527,54 @@
 </div>
 <br>
              
-<!-- Tabs -->   
-    <div class="wrapper">
-    <ul class="tabs clearfix" data-tabgroup="second-tab-group">
-      <li><a href="#tab6" class="active">THE KEY INSIGHTS</a></li>
-      <li><a href="#tab7">PREVIOUS STEPS</a></li>
-      <li><a href="#tab8">NEXT STEPS</a></li>
-        
-      <li style = " width:5%;"><a href="#tab9"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Link_sprint.svg"/>  </a></li>
-      <li style = " width:5%;"><a href="#tab10"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Edit_sprint.svg"/> </a></li>
-      <li style = " width:5%;"><a href="#tab11"> <img id = "tabIcon"  src = "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Image_sprint.svg"/> </a></li>
-    </ul>
-       
-<!-- Tab text here (inside)-->
-    <section id="second-tab-group" class="tabgroup">
-      <div id="tab6">
-        <div id = "keyInsight1">
-            People have personal preferences when it comes to documenting.
-        </div>
-          
-        <div id = "keyInsight2">
-           People already document consistently, but not for the purpose of sharing (with the team and/or the world). This makes the documentation only understandable for themselves.
-        </div>
-          
-        <div id = "keyInsight3">
-            It is hard to classify behavior, especially with teams that are multidisciplinary and international. 
-        </div>
-          
-        <div id = "keyInsight4">
-            Quantifying qualitative data can be really hard, because it is subjected to interpretation. 
-        </div>
+
+<!-- REAL TABS -->
+<div class="TabsWrapper">
+  <li class="tabLiteral" id="tab1"> THE KEY INSIGHTS
+  </li>
+  <li class="tabLiteral" id="tab2"> PREVIOUS STEPS
+  </li>
+  <li class="tabLiteral" id="tab3" style="margin-right: 34%;"> NEXT STEP
+  </li>
+
+  <img id="icon1" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Link_sprint.svg" data-pin-nopin="true">
+    <img id="icon2" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Edit_sprint.svg" data-pin-nopin="true">
+  <img id="icon3" class="tabIcon" src="http://localhost/wp-content/themes/DMT-Theme/library/images/Image_sprint.svg" data-pin-nopin="true"> 
+</div>
+
+        <!-- TAB CONTENT -->
+<!-- tab1: key inisght area -->
+<div id="tabContent1" class="tabBlock">
+  
+  <div class="keyInsightContainer">
+    <div class="keyInsightItem" id="key1">
+        <img class="icon"  style="position:relative;float:right;"  src="http://localhost/wp-content/themes/DMT-Theme/library/images/KeyInsight_new.svg"/>
+        People have personal preferences when it comes to documenting.
+      <span class="insightEvents"> 
+        <div style="font-weight:bolder">EVENTS</div>
+        <div>Literature Review -Method <br> Flow Chart -method</div>
+      </span>
+      </div>  
+      <div class="keyInsightItem" id="key2">People already document consistently, but not for the purpose of sharing (with the team and/or the world). This makes the documentation only understandable for themselves.</div>
+      <div class="keyInsightItem" id="key3">It is hard to classify behavior, especially with teams that are multidisciplinary and international. 
       </div>
+     <div class="keyInsightItem" id="key4"> Quantifying qualitative data can be really hard, because it is subjected to interpretation. 
+      </div> 
+  </div>
+
+</div>
+
+<!-- Previous steps -->
+<div id="tabContent2" class="tabBlock" style="display:none;">
+  <p>The chatbot was not the solution for our problem, therefore we decided to focus on the way Multidisciplinary Design Teams document their process.</p>
+</div>
         
-      <div id="tab7">
-          <p>The chatbot was not the solution for our problem, therefore we decided to focus on the way Multidisciplinary Design Teams document their process.</p>
-      </div>
-        
-      <div id="tab8">
-         <p>1.We will focus on “how do people look for and read documentation?”. <br>
-             2.We will start on making and testing a specific part of our documentation tool. </p>
-      </div>
-    </section>
+    <!--Next steps-->
+    <div id="tabContent3" class="tabBlock" style="display:none;">
+        <p>1.We will focus on “how do people look for and read documentation?”. <br>
+        <p> 2.We will start on making and testing a specific part of our documentation tool. </p>
     </div>
+</div>
 
 
         
@@ -589,56 +595,62 @@
         }
 
     </style>
-        
-<!-- Script for the tab functionality [Error: 2 tabs in page ruins other one..] -->
-    <script type="text/javascript">
-        $('.tabgroup > div').hide();
-        $('.tabgroup > div:first-of-type').show();
-        $('.tabs a').click(function(e){
-          e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active');
-            $this.addClass('active');
-            $(tabgroup).children('div').hide();
-            $(target).show();
+ <!-- Script for tab functionality -->       
+<script type="text/javascript">
+      
 
-    })
-    </script>
+      var tab1 =document.getElementById("tab1");
+      var tab2 =document.getElementById("tab2");
+      var tab3 =document.getElementById("tab3");
     
-        <!-- Script for other tab  (popup)-->
-    <script type="text/javascript">
-        $('.tabgroup > div').hide();
-        $('.tabgroup > div:first-of-type').show();
-        $('.tabs2 a').click(function(e){
-          e.preventDefault();
-            var $this = $(this),
-                tabgroup = '#'+$this.parents('.tabs2').data('tabgroup'),
-                others = $this.closest('li').siblings().children('a'),
-                target = $this.attr('href');
-            others.removeClass('active2');
-            $this.addClass('active2');
-            $(tabgroup).children('div').hide();
-            $(target).show();
+      //on click functions for tabs
+      tab1.onclick=function(){
+        clearTabContent();
+        activate("tabContent1");
+      }
 
-    })
-    </script>
+      tab2.onclick=function(){
+                clearTabContent();
+
+        activate("tabContent2");
+
+      }
+      tab3.onclick=function(){
+        clearTabContent();
+        activate("tabContent3");
+      }
+
+
+    //display tab which is passed as an argument
+    function activate(tabID){
+            document.getElementById(tabID).style.display="block";
+        }
+    //clear all tab containers from their contents
+    function clearTabContent(){
+      document.getElementById("tabContent1").style.display="none";
+      document.getElementById("tabContent2").style.display="none";
+      document.getElementById("tabContent3").style.display="none";
+    }
+
+</script>
+
+
         
 <!--Script for the popup functionality-->
-        <script>
+    <script>
+            
+        //Retrieve the popup containers
         var popup1 = document.getElementById("popupPage1");
         var popup2 = document.getElementById("popupPage2");
         var popup3 = document.getElementById("popupPage3");
         var popup4 = document.getElementById("popupPage4");
         var MVP = document.getElementById("MVP");
-            
-        var keyInsight1 = document.getElementById("keyInsight1");
-        var keyInsight2 = document.getElementById("keyInsight2");
-        var keyInsight3 = document.getElementById("keyInsight3");
-        var keyInsight4 = document.getElementById("keyInsight4");
-        var closeBtn = document.getElementsByClassName("close")[0];
+         
+        //Retrieve the keyinsight boxes/buttons
+        var keyInsight1 = document.getElementById("key1");
+        var keyInsight2 = document.getElementById("key2");
+        var keyInsight3 = document.getElementById("key3");
+        var keyInsight4 = document.getElementById("key4");
         var mvpBtn = document.getElementById("mvpBtn");
         
         //Shows key insight when pressed 
@@ -657,17 +669,10 @@
         mvpBtn.onclick = function() {
             MVP.style.display= "block";
         }
-        //Closes key insight when pressed 
-        closeBtn.onclick = function(){
-            popup1.style.display = "none";
-            popup2.style.display = "none";
-            popup3.style.display = "none";
-            popup4.style.display = "none";
-            MVP.style.display="none";
-            alert("b");
+        
+        //Function for hiding the popup (usnig the closeBtn)
+        function hide(popup){
+            document.getElementById(popup).style.display="none";
         }
         
-        </script>
-      </div> 
-
-<?php get_footer(); ?>
+    </script>
