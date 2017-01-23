@@ -1,5 +1,18 @@
 <!doctype html>
 
+<?php
+
+ add_action("wp_enqueue_scripts", "enqueue_");
+ function enqueue_() {
+    wp_enqueue_script( 'wp-api', plugins_url( 'build/js/wp-api.js', __FILE__ ), array( 'jquery', 'underscore', 'backbone' ), '1.0', true );
+    $settings = array( 'root' => esc_url_raw( get_rest_url() ), 'nonce' => wp_create_nonce( 'wp_rest' ) );
+    wp_localize_script( 'wp-api', 'WP_API_Settings', $settings );
+    wp_register_script('wp-api');
+
+}
+
+?>
+
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
@@ -96,20 +109,20 @@
 					</div>
 
           <a href="https://docs.google.com/forms/d/1Lm_6h3AlFZjXxDk8GfXkRyUK19fFBrtj0t22ZO7m8yw/viewform?embedded=true" target="_blank" rel="nofollow">
-            <div id="order">
+            <div id="order" style="display:none">
             <h3>order</h3>
             </div>
           </a>
-					<div id="search">
+					<div id="search" style="display:none">
 						<h3>search</h3>
 					</div>
 
-					<div id="filter">
+					<div id="filter" style="display:none">
 						<h3>filter methods</h3>
 					</div>
 
 					<a href="<?php echo get_site_url(); ?>/using-the-toolkit" rel="nofollow">
-						<div id="howto">
+						<div id="howto" style="display:none">
 						<h3>about</h3>
 						</div>
 					</a>
