@@ -34,11 +34,6 @@ update_user_meta( $user_id, 'user_projects', $user_proj);
  ?>
 
 
-
-
-
-
-
  <?php get_header(); 
 
 include '../../../wp-load.php';
@@ -109,7 +104,7 @@ include '../../../wp-load.php';
 
 </style>
 
-<img  id="startupRocket" src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/RocketGif.png" style="position: absolute;
+<img  id="startupRocket" src="<?php echo get_stylesheet_directory_uri(); ?>library/images/Scream%20icons/RocketGif.png" style="position: absolute;
     float: left;
     z-index: 5;
     width: 20%;
@@ -123,13 +118,13 @@ include '../../../wp-load.php';
 <div class="startUpBar">
 
 <div class="startUpTitle">
-<img src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/StartUp.svg" style="width:1em;height:1.2em;margin-right:.5em;margin-left:.5em; vertical-align:text-bottom;float:left;"> STARTING UP
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/Scream%20icons/StartUp.svg" style="width:1em;height:1.2em;margin-right:.5em;margin-left:.5em; vertical-align:text-bottom;float:left;"> STARTING UP
  </div>
- <div class="startUpItem" id="join" style="font-weight:bold;" onclick="landing()">Join SCREAM <img id="check1" class="icon" style="display:none;"; src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/check.svg"></div>
+ <div class="startUpItem" id="join" style="font-weight:bold;" onclick="landing()">Join SCREAM <img id="check1" class="icon" style="display:none;"; src= "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Scream%20icons/check.svg"></div>
 
- <div class="startUpItem" id="setup" onclick="completedJoin()">Set Up Project<img id="check2" class="icon" style="display:none;"; src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/check.svg"></div>
+ <div class="startUpItem" id="setup" onclick="completedJoin()">Set Up Project<img id="check2" class="icon" style="display:none;"; src= "<?php echo get_stylesheet_directory_uri(); ?>library/images/Scream%20icons/check.svg"></div>
 
- <div class="startUpItem" id="maketeam" onclick="completedSetup()">Create a team<img id="check3" class="icon" style="display:none;"; src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/check.svg"></div>
+ <div class="startUpItem" id="maketeam" onclick="completedSetup()">Create a team<img id="check3" class="icon" style="display:none;"; src= "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Scream%20icons/check.svg"></div>
 
 </div>
 
@@ -145,17 +140,17 @@ include '../../../wp-load.php';
     display: flex;
     width: 50%;
     border-bottom: solid 2px rgba(191, 191, 191, 0.75);">
-    <div class="readOnly" style="    display: inline-block;
-    border-bottom: 2px black;
-    margin-top: 0;
-    padding-top: 18%;
-    font-size: 130%;">Hello,</div>
-<input type="text" class="scream_oneline" placeholder=" your first name" style="padding-top: 1em;
-    display: inline-block;
-    margin-top: 16.3%;
-    margin-bottom: 0;
-    border-bottom: 0;
-    padding-left: 0;">
+        <div class="readOnly" style="    display: inline-block;
+        border-bottom: 2px black;
+        margin-top: 0;
+        padding-top: 18%;
+        font-size: 130%;">Hello,</div>
+        <input type="text" class="scream_oneline" placeholder=" your first name" style="padding-top: 1em;
+        display: inline-block;
+        margin-top: 16.3%;
+        margin-bottom: 0;
+        border-bottom: 0;
+        padding-left: 0;">
   </div>
 
     <input type="text" class="scream_oneline" placeholder=" your last name" style="padding-top:1em;">
@@ -164,14 +159,14 @@ include '../../../wp-load.php';
 
 <span style="display:flex;flex-direction:row;">
  <input type="password" class="scream_oneline" placeholder=" your password" style="padding-top:1em;">
- <img class="icon" src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/key.png" style="margin-top: 5em;
+ <img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/Scream%20icons/key.png" style="margin-top: 5em;
     margin-right: 14em;
     width: 2em;
     height: 2em;">
  </span>
  <span style="display:flex;flex-direction:row;">
   <input type="password" class="scream_oneline" placeholder=" Confirm your password" style="padding-top:1em;">
-   <img class="icon" src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/key.png" style="margin-top: 5em;
+   <img class="icon" src= "<?php echo get_stylesheet_directory_uri(); ?>/library/images/Scream%20icons/key.png" style="margin-top: 5em;
     margin-right: 14em;
     width: 2em;
     height: 2em;">
@@ -196,14 +191,7 @@ include '../../../wp-load.php';
 
   <div style="font-weight: 500; margin-top: 1.5%;" >Time Frame</div>
     <input type="text" name="daterange" id="datepicker" style="background-color:white;width:40%;border:solid lightgray 2px; padding:.75em" value="Start date -----> End date" >
-  <div id="setupproj_btn" class="next_btn" onclick="completedSetup()">Create team</div>
-
-
-    </>
-
-
-
-
+    <div id="setupproj_btn" class="next_btn" onclick="completedSetup()">Create team</div>
   </div>
 
 
@@ -220,22 +208,22 @@ include '../../../wp-load.php';
 
       <div id="planSprint_btn" class="next_btn" onclick="completedTeam()">Plan the first sprint</div>
       <div id="viewProj_btn" class="scream_btn" onclick="completedTeam()" style="    /* text-align: center; */
-    /* width: 250px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 110%;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    background-color: white;
-    width: 23em;
-    height: 6em;
-    margin-top: 3em;
-    line-height: 300%;
+        /* width: 250px; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 110%;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        background-color: white;
+        width: 23em;
+        height: 6em;
+        margin-top: 3em;
+        line-height: 300%;
         margin-left: 1pc;"
-        >View the Project Page</div>
+            >View the Project Page
+        </div>
       </span>
-
     </div>
 
 
@@ -269,33 +257,26 @@ function completedJoin(){
 
           $("#setUpContainer").fadeIn("900");
           $("#check1").fadeIn("50");
-                    //unbolden previous step
+           //unbolden previous step
 
           $("#join").css("font-weight", "normal");
           $("#setup").css("font-weight", "bold");
           $("#maketeam").css("font-weight", "normal");
 }
 function completedSetup(){
-            $("#joinContainer").fadeOut("300");
-            $("#setUpContainer").fadeOut("300");
-            $("#teamContainer").fadeIn("900");
+          $("#joinContainer").fadeOut("300");
+          $("#setUpContainer").fadeOut("300");
+          $("#teamContainer").fadeIn("900");
            
           $("#join").css("font-weight", "normal");
           $("#setup").css("font-weight", "normal");
           $("#maketeam").css("font-weight", "bold");
-            $("#check2").fadeIn("50");
+          $("#check2").fadeIn("50");
 
- 
-
-
-
-
-}
+}        
+    
 function completedTeam(){
-document.getElementById('startupRocket').src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/RocketGif_foever.gif";
-
-
-
+document.getElementById('startupRocket').src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/Scream%20icons/RocketGif_foever.gif";
 }
   
 // handle pressing ENTER while typing email 
@@ -309,21 +290,18 @@ document.getElementById('startupRocket').src="/wp-content/themes/DMT-Theme/libra
               div.style.height = "au";
               div.style.background = "transparent";
               div.style.color = "black";
-              div.innerHTML = "<img class='icon' src='/wp-content/themes/DMT-Theme/library/images/Scream%20icons/man.svg'>"+$email;
+              div.innerHTML = "<img class='icon' src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/man.svg"/>"+$email;
               document.getElementById('email_input').value='';
               document.getElementById('email_input').placeholder="add more members";
               document.getElementById("membersArea").appendChild(div);
 
-$.ajax ({
-        url: "../email.php",
-        // data: { email : $email }, //optional
-        success: function( result ) {
-            //do something after you receive the result
-        }
-
-
+                $.ajax ({
+                        url: "../email.php",
+                        // data: { email : $email }, //optional
+                        success: function( result ) {
+                            //do something after you receive the result
+                        }
                 });
 
     }}
 </script>
-<?php get_footer(); ?>
