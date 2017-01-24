@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Start Up Phase
+ Template Name: Test page wpApiSettings 
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -31,7 +31,6 @@ $user_id = $user -> ID;
 $user_proj = array("1403","1393");
 update_user_meta( $user_id, 'user_projects', $user_proj);
 ?> */
-
 ?>
 
 
@@ -39,17 +38,9 @@ update_user_meta( $user_id, 'user_projects', $user_proj);
 
 
 
+<?php get_header(); ?>
 
-<?php 
-// add_action("wp_enqueue_scripts", "enqueue_");
-// function enqueue_() {
-//   wp_enqueue_script( 'wp-api', plugins_url( 'build/js/wp-api.js', __FILE__ ), array( 'jquery', 'underscore', 'backbone' ), '1.0', true );
-//   $settings = array( 'root' => esc_url_raw( get_rest_url() ), 'nonce' => wp_create_nonce( 'wp_rest' ) );
-//   wp_localize_script( 'wp-api', 'WP_API_Settings', $settings );
-//   wp_register_script('wp-api');
 
-// }
-get_header();  ?>
 
 
 
@@ -63,6 +54,9 @@ get_header();  ?>
 
 </script>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+
+
 
 
 <!-- set page styles -->
@@ -115,6 +109,7 @@ get_header();  ?>
 
 
 </style>
+
 
 <img  id="startupRocket" src="/wp-content/themes/DMT-Theme/library/images/Scream%20icons/RocketGif.png" style="
 position: absolute;
@@ -212,8 +207,8 @@ border: solid .5px lightgray;
 <div style="font-weight: normal;margin-top: 1.5%;margin-bottom: 1%;">PROJECT GOAL</div>
 
 <div id="inputContainer" style="display: flex;border: solid;border: solid lightgray .5px;width: 65%;">
-  <textarea id="projGoal" rows="4" cols="7" readonly="" style="display: inline-block;float:right;font-weight:bold;border-right: 0px;width: 14.5%;padding-top: 1%;padding-right: 0;font-size: 130%;background-color: transparent;">Our aim is</textarea>
-  <textarea rows="4" cols="50" style="display: inline-block; float: right; font-weight: normal; border-right: 0px; width: 580px; padding-top: 1%; padding-right: 0px; background-color: transparent; margin: 0px; font-size: 130%; padding-left: 0px; height: 125px;" placeholder="Explain how you're trying to solve this project's design problem" data-gramm="true" data-txt_gramm_id="eeaeee72-d55c-ccbb-2a7d-a8f18d216b25" data-gramm_id="eeaeee72-d55c-ccbb-2a7d-a8f18d216b25" spellcheck="false" data-gramm_editor="true"></textarea><grammarly-btn><div style="z-index: 2; transform: translate(1662px, 415.797px);" class="_9b5ef6-textarea_btn _9b5ef6-show _9b5ef6-anonymous _9b5ef6-field_hovered" data-grammarly-reactid=".0"><div class="_9b5ef6-transform_wrap" data-grammarly-reactid=".0.0"><div title="Protected by Grammarly" class="_9b5ef6-status" data-grammarly-reactid=".0.0.0">&nbsp;</div></div><span class="_9b5ef6-btn_text" data-grammarly-reactid=".0.1">Not signed in</span></div></grammarly-btn>
+  <textarea  rows="4" cols="7" readonly="" style="display: inline-block;float:right;font-weight:bold;border-right: 0px;width: 14.5%;padding-top: 1%;padding-right: 0;font-size: 130%;background-color: transparent;">Our aim is</textarea>
+  <textarea id="projGoal" rows="4" cols="50" style="display: inline-block; float: right; font-weight: normal; border-right: 0px; width: 580px; padding-top: 1%; padding-right: 0px; background-color: transparent; margin: 0px; font-size: 130%; padding-left: 0px; height: 125px;" placeholder="Explain how you're trying to solve this project's design problem" data-gramm="true" data-txt_gramm_id="eeaeee72-d55c-ccbb-2a7d-a8f18d216b25" data-gramm_id="eeaeee72-d55c-ccbb-2a7d-a8f18d216b25" spellcheck="false" data-gramm_editor="true"></textarea><grammarly-btn><div style="z-index: 2; transform: translate(1662px, 415.797px);" class="_9b5ef6-textarea_btn _9b5ef6-show _9b5ef6-anonymous _9b5ef6-field_hovered" data-grammarly-reactid=".0"><div class="_9b5ef6-transform_wrap" data-grammarly-reactid=".0.0"><div title="Protected by Grammarly" class="_9b5ef6-status" data-grammarly-reactid=".0.0.0">&nbsp;</div></div><span class="_9b5ef6-btn_text" data-grammarly-reactid=".0.1">Not signed in</span></div></grammarly-btn>
 
 </div>
 <comment style="color:lightgrey;font-size:smaller;"> Don't worry! you can always edit your project goal later</comment>
@@ -222,17 +217,10 @@ border: solid .5px lightgray;
 <input type="text" name="daterange" id="datepicker" style="background-color:white;width:40%;border: solid lightgray .5px;padding:.75em;" value="Start date -----> End date">
 <div id="setupproj_btn" class="next_btn" onclick="completedSetup()">Create team</div>
 
-
-
-
-
-
-
 </div>
 
-
 <!-- 'Create a team' Container -->
-<div id="teamContainer" class="startUpContainer" style="display: block;"> <div class="startUpHeader">CREATE A TEAM</div>
+<div id="teamContainer" class="startUpContainer" style="display: none;"> <div class="startUpHeader">CREATE A TEAM</div>
 <div class="startUpSubHeader">with whom are you working on this project?</div>
 <input id="email_input" type="text" class="scream_oneline" placeholder="+add more members" style="padding-top:1em; " onkeypress="handle(event)">
 <span id="membersArea" style="
@@ -310,10 +298,39 @@ line-height: 195%;
 font-family: &quot;Montserrat&quot;, serif;
 ">View the Project Page</div>
 </span>
-
 </div>
+<script type="text/javascript">
+  
+
+  function handle(e){
+        //TODO some form of validation needed, if user has already been registered, or has been notified 
+        if(e.keyCode === 13){
+          $email=document.getElementById('email_input').value;
+            e.preventDefault(); // Ensure it is only this code that rusn
+            var div = document.createElement("div");
+            div.style.width = "59%";
+
+            div.style.height = "au";
+            div.style.background = "transparent";
+            div.style.color = "black";
+            div.innerHTML = "<img class='icon' src='/wp-content/themes/DMT-Theme/library/images/Scream%20icons/man.svg'>"+$email;
+            document.getElementById('email_input').value='';
+            document.getElementById('email_input').placeholder="add more members";
+            document.getElementById("membersArea").appendChild(div);
+
+            $.ajax ({
+              url: "../email.php",
+        // data: { email : $email }, //optional
+        success: function( result ) {
+            //do something after you receive the result
+          }
 
 
+        });
+
+          }}
+  
+</script>
 
 <script type="text/javascript">
 
@@ -327,8 +344,7 @@ $('input[name="daterange"]').daterangepicker(
 
 </script>
 
-
-
+  
 <script type="text/javascript">
 
 //variables
@@ -495,33 +511,6 @@ function convertUNIXDate(dates){
   // }
 
 
-  function handle(e){
-        //TODO some form of validation needed, if user has already been registered, or has been notified 
-        if(e.keyCode === 13){
-          $email=document.getElementById('email_input').value;
-            e.preventDefault(); // Ensure it is only this code that rusn
-            var div = document.createElement("div");
-            div.style.width = "59%";
-
-            div.style.height = "au";
-            div.style.background = "transparent";
-            div.style.color = "black";
-            div.innerHTML = "<img class='icon' src='/wp-content/themes/DMT-Theme/library/images/Scream%20icons/man.svg'>"+$email;
-            document.getElementById('email_input').value='';
-            document.getElementById('email_input').placeholder="add more members";
-            document.getElementById("membersArea").appendChild(div);
-
-            $.ajax ({
-              url: "../email.php",
-        // data: { email : $email }, //optional
-        success: function( result ) {
-            //do something after you receive the result
-          }
-
-
-        });
-
-          }}
 
 
           function submit(){
@@ -556,7 +545,7 @@ function convertUNIXDate(dates){
                       console.log(errorThrown);}
                     });
 
-              e.preventDefault();
+             // e.preventDefault();
                // window.location.href = 'http://localhost/create-team/';
 
            }
@@ -590,4 +579,3 @@ function convertUNIXDate(dates){
 
 // }
 </script>
-
